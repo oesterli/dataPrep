@@ -17,6 +17,8 @@ def readShapefile(source):
 	print('Rows: ', data.shape[0])
 	print('Columns: ', data.shape[1])
 
+	return data
+
 def readCsv(source):
 	data = read_file(source)
 	print('CSV read')
