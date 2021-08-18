@@ -3,7 +3,6 @@
 from IPython.display import display
 from IPython.core.display import HTML
 
-
 from tabulate import tabulate
 import testDataloader
 
@@ -32,7 +31,8 @@ print('DONE')
 
 print(rawData.columns)
 
-#display(rawData)
+for c in rawData["ORIGINAL_N"]:
+	display(c)
 #HTML(rawData.to_html())
 #HTML(rawData.head(2).to_html())
 #rawData.style

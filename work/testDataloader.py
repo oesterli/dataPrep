@@ -11,6 +11,8 @@ def readGpkg(source):
 	print('Rows: ', data.shape[0])
 	print('Columns: ', data.shape[1])
 
+	return data
+
 def readShapefile(source):
 	data = read_file(source)
 	print('Shapefile read')
