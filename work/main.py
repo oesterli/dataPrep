@@ -3,9 +3,9 @@
 import testDataloader
 
 # define source
-file = "../scr/data/input/bh/sf/bdms-export-20210818140036/swissforages.gpkg"
-#file = "../scr/data/input/bh/sf/export-20210818141348/export-20210818141348.shp"
-#file ="../scr/data/input/bh/sf/full-export-20210818140828.csv"
+#file = "../scr/data/input/bh/sf/bdms-export-20210818194918/swissforages.gpkg"
+#file = "../scr/data/input/bh/sf/export-20210818194900/export-20210818194900.shp"
+file ="../scr/data/input/bh/sf/full-export-20210818194900.csv"
 
 source_file = file
 
@@ -19,8 +19,9 @@ elif source_file.lower().endswith('.shp'):
 
 elif source_file.lower().endswith('.csv'):
 	print('This is a csv')
-	testDataloader.readCsv(source_file)
+	rawData = testDataloader.readCsv(source_file)
 else:
 	print('Unknown file format')
 
 print('DONE')
+
