@@ -1,39 +1,228 @@
 # Main Program
 
+#################################
+## IMPORTS
+#################################
 from IPython.display import display
-from IPython.core.display import HTML
+import os
+import gc
+import datetime
+import json
+import pandas as pd
+import geopandas as gpd
+from shapely.geometry import Point
+from pyproj import Proj
+import matplotlib as mpl
+import matplotlib.pyplot as plt
 
-from tabulate import tabulate
-import testDataloader
+import bhUtils
 
-# define source
-#file = "../scr/data/input/bh/sf/bdms-export-20210818194918/swissforages.gpkg"
-file = "../scr/data/input/bh/sf/export-20210818194900/export-20210818194900.shp"
-#file ="../scr/data/input/bh/sf/full-export-20210818194900.csv"
 
-source_file = file
+################################
+## Load Configuration
+################################
+with open("/Users/oesterli/Documents/_temp/bhPrep/work/config.json",) as file:
+    conf = json.load(file)
 
-if source_file.lower().endswith('.gpkg'):
-	print('This is a Geopackage')
-	testDataloader.readGpkg(source_file)
+## Specify variables
+now = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
-elif source_file.lower().endswith('.shp'):
-	print('This is a Shapefile')
-	rawData = testDataloader.readShapefile(source_file)
+# Define log_file path and name
+fname = "log" + "_" + now + ".txt"
+log_file = os.path.join(conf["out_dir"],fname)
 
-elif source_file.lower().endswith('.csv'):
-	print('This is a csv')
-	rawData = testDataloader.readCsv(source_file)
+source_file = conf["source_gpkg"]
+data_folder = conf["data_path"]
+ext = conf["file_ext"]
+
+source_ch_peri = conf["source_CH-perimeter"]
+
+out_dir = conf["out_dir"]
+sel_cols = conf["sel_cols"]
+
+raw_bh_fname = conf["raw_bh_fname"]
+private_bh_fname = conf["private_bh_fname"]
+public_bh_fname = conf["public_bh_fname"]
+
+################################
+## Load data
+################################
+
+## Load a single file
+#out_data = testDataloader.singleDataLoader(source_file)
+#print('> Data loaded')
+#print("-------------------")
+
+## Read multiple files
+files, data = bhUtils.multiDataLoader(data_folder, ext)
+print("> Files loaded", files)
+print("-------------------")
+
+################################
+## Display data
+################################
+## Display all columns
+#pd.set_option('display.max_columns', None)
+#pd.set_option('display.max_rows', None)
+#display(data.head(5))
+
+## Display all columns and dtypes
+#print(data.info(verbose=True))
+
+
+################################
+## Statistics
+################################
+## Create some simple statistics
+num_bh = len(data['SHORTNAME'].unique())
+num_layers = data.shape[0]
+print('> Number of individual borehole: ', num_bh)
+print('> Number of individual layers: ', num_layers)
+
+## Calculate number of layers per borehole
+layer_per_bh = data.groupby('SHORTNAME')['DEPTHFROM'].nunique()
+print(layer_per_bh.describe())
+print("-------------------")
+
+
+################################
+# Plot data
+################################
+fig, axs = plt.subplots(2)
+fig.suptitle('x-/y-coordinates; TiefeMD')
+axs[0].plot(data['XCOORD'], data['YCOORD'], '+', color='black')
+axs[1].hist(data['TIEFEMD'], label='TIEFEMD', log=True, histtype='bar', edgecolor='black',  color='green')
+
+print("> Plot data")
+plt.show()
+print("-------------------")
+
+
+################################
+# Processing RAW data
+################################
+## Sort data by "SHORTNAME" and "DEPTHFROM"
+data = data.sort_values(by=["SHORTNAME", "DEPTHFROM"])
+
+## Create an index column
+data['index'] = data.index
+
+## Round data
+data['XCOORD'] = data['XCOORD'].round(decimals=2)
+data['YCOORD'] = data['YCOORD'].round(decimals=2)
+data['ZCOORDB'] = data['ZCOORDB'].round(decimals=2)
+data['TIEFEMD'] = data['TIEFEMD'].round(decimals=2)
+data['DEPTHFROM'] = data['DEPTHFROM'].round(decimals=2)
+data['DEPTHTO'] = data['DEPTHTO'].round(decimals=2)
+
+
+################################
+## Export raw data
+################################
+## Export data to csv
+bhUtils.exporter(out_dir, raw_bh_fname, data)
+print("> Raw data exported!")
+print("-------------------")
+
+################################
+## Process PRIVATE data
+################################
+## Check for duplicates
+## Copy all columns name to list "cols"
+cols = data.columns.to_list()
+
+## Create a list of columns except the index column, in order to use it as a subset for finding duplicate rows
+cols = cols[0:-1]
+
+# Find duplicate rows (checking duplicates based on all columns)
+dup_rows = data[data.duplicated(subset=cols)]
+print("> Duplicate Rows except first occurrence based on all columns are :", dup_rows['LONGNAME'].count())
+
+#Show duplicate entries if exisiting
+if len(dup_rows) > 0:
+    print("> Duplicate rows: ")
+    dup_rows.head()
 else:
-	print('Unknown file format')
+    pass
 
-print('DONE')
+## Drop all duplicated rows and save result to "data"
+if len(dup_rows) > 0:
+    data = data.drop_duplicates(subset=cols)
+    print("> ", len(dup_rows), " rows dropped")
+else:
+    print("> No rows dropped")
 
-print(rawData.columns)
+print("> Check for duplicates finished!")
+print("-------------------")
 
-for c in rawData["ORIGINAL_N"]:
-	display(c)
-#HTML(rawData.to_html())
-#HTML(rawData.head(2).to_html())
-#rawData.style
-#print(tabulate(rawData, headers = 'keys', tablefmt = 'psql'))
+## Select only relevant columns
+data = data[sel_cols]
+print("> Shape, only relevant columns", data.shape)
+
+
+################################
+## Convert DataFrame to GoeDataFrame
+################################
+# ## Convert dataframe to geodataframe "gdf" and set inital crs to epsg:2056
+private_bh = bhUtils.makeGeospatial(data, 2056)
+print("> Geodataframe created")
+print("> CRS set to : ", private_bh.crs)
+print("-------------------")
+
+################################
+## Plot GeoDataFrame
+################################
+
+## Load swiss boundary from shapefile
+ch_peri = gpd.read_file(source_ch_peri)
+
+## Select only swiss perimeter
+ch_peri = ch_peri[ch_peri['ICC'] == 'CH']
+
+## Create buffer around CH-Perimeter
+ch_peri_buf = ch_peri.buffer(20000)
+
+## Plot GeoDataFrame together with swiss boundary
+base = ch_peri.plot(color='white', edgecolor='black')
+lyr_1 = ch_peri_buf.plot(ax=base, edgecolor='blue', facecolor='none')
+private_bh.plot(ax=lyr_1, color='red', markersize=5);
+
+print("> Plot Geodataframe")
+plt.show()
+print("-------------------")
+
+################################
+## Clip and reproject
+################################
+## Clip the data using GeoPandas clip
+private_bh = gpd.clip(private_bh, ch_peri)
+print("> Geodataframe clipped.")
+print("-------------------")
+
+## Reproject Geodataframe and write re-projected coordinates into new column
+private_bh = bhUtils.reprojecter(private_bh)
+print("> Reprojected CRS: ", private_bh.crs)
+print("-------------------")
+
+
+################################
+## Export PRIVATE data
+################################
+## Rename columns for export
+private_bh.columns = conf["export_pri_cols"]
+
+
+## Export data to csv
+bhUtils.exporter(out_dir, private_bh_fname, private_bh)
+print("> Private data exported!")
+print("-------------------")
+
+
+print("> Data processing finished!")
+print("===================")
+
+################################
+## Delete dataframe and free memory
+################################
+del(data)
+gc.collect()
