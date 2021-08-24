@@ -107,16 +107,20 @@ def reprojecter(gdf):
 	return gdf
 
 
-def loggerX(logFile, text):
+def loggerX(outdir, text):
     """
 
-    :param logFile:
+    :param outdir:
     :param text:
     :return:
     """
+    fname = "log" + "_" + now + ".txt"
+    logFile = os.path.join(outdir, fname)
+
     with open(logFile, 'a') as f:
         print(now, text, sep=';', file=f)
 
     # print date, time and message to stdout
-    print(now, text, log_file)
+    print(now, text)
+    print("-------------------")
     return

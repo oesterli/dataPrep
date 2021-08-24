@@ -27,10 +27,6 @@ with open("/Users/oesterli/Documents/_temp/bhPrep/work/config.json",) as file:
 ## Specify variables
 now = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
-# Define log_file path and name
-fname = "log" + "_" + now + ".txt"
-log_file = os.path.join(conf["out_dir"],fname)
-
 source_file = conf["source_gpkg"]
 data_folder = conf["data_path"]
 ext = conf["file_ext"]
@@ -55,8 +51,13 @@ public_bh_fname = conf["public_bh_fname"]
 
 ## Read multiple files
 files, data = bhUtils.multiDataLoader(data_folder, ext)
-print("> Files loaded", files)
-print("-------------------")
+#print("> Files loaded: ", files)
+#print("-------------------")
+
+## Log checkpoint
+text = "> Files loaded: ", files
+bhUtils.loggerX(out_dir, text)
+
 
 ################################
 ## Display data
@@ -76,26 +77,38 @@ print("-------------------")
 ## Create some simple statistics
 num_bh = len(data['SHORTNAME'].unique())
 num_layers = data.shape[0]
-print('> Number of individual borehole: ', num_bh)
-print('> Number of individual layers: ', num_layers)
+
+text = "> Number of individual borehole: ", num_bh
+bhUtils.loggerX(out_dir, text)
+text = "> Number of individual layers: ", num_layers
+bhUtils.loggerX(out_dir, text)
+
 
 ## Calculate number of layers per borehole
 layer_per_bh = data.groupby('SHORTNAME')['DEPTHFROM'].nunique()
-print(layer_per_bh.describe())
-print("-------------------")
+
+text = "> Stats: ", layer_per_bh.describe()
+bhUtils.loggerX(out_dir, text)
+#("-------------------")
 
 
 ################################
-# Plot data
+# Plot RAW data
 ################################
-fig, axs = plt.subplots(2)
-fig.suptitle('x-/y-coordinates; TiefeMD')
+fig1, axs = plt.subplots(2)
+fig1.suptitle('x-/y-coordinates; TiefeMD')
 axs[0].plot(data['XCOORD'], data['YCOORD'], '+', color='black')
 axs[1].hist(data['TIEFEMD'], label='TIEFEMD', log=True, histtype='bar', edgecolor='black',  color='green')
-
-print("> Plot data")
 plt.show()
-print("-------------------")
+
+pname = "bh_raw_" + now + ".jpg"
+ppath = os.path.join(out_dir, pname)
+fig1.savefig(ppath)
+plt.close()
+
+text = "> RAW data plotted"
+bhUtils.loggerX(out_dir, text)
+#print("-------------------")
 
 
 ################################
@@ -117,12 +130,13 @@ data['DEPTHTO'] = data['DEPTHTO'].round(decimals=2)
 
 
 ################################
-## Export raw data
+## Export RAW data
 ################################
 ## Export data to csv
 bhUtils.exporter(out_dir, raw_bh_fname, data)
-print("> Raw data exported!")
-print("-------------------")
+text = "> Raw data exported!"
+bhUtils.loggerX(out_dir, text)
+#print("-------------------")
 
 ################################
 ## Process PRIVATE data
@@ -136,11 +150,15 @@ cols = cols[0:-1]
 
 # Find duplicate rows (checking duplicates based on all columns)
 dup_rows = data[data.duplicated(subset=cols)]
-print("> Duplicate Rows except first occurrence based on all columns are :", dup_rows['LONGNAME'].count())
+
+text = "> Duplicate Rows except first occurrence based on all columns are :", dup_rows['LONGNAME'].count()
+bhUtils.loggerX(out_dir, text)
 
 #Show duplicate entries if exisiting
 if len(dup_rows) > 0:
-    print("> Duplicate rows: ")
+    text = "> Duplicate rows: "
+    bhUtils.loggerX(out_dir, text)
+
     dup_rows.head()
 else:
     pass
@@ -148,16 +166,20 @@ else:
 ## Drop all duplicated rows and save result to "data"
 if len(dup_rows) > 0:
     data = data.drop_duplicates(subset=cols)
-    print("> ", len(dup_rows), " rows dropped")
+    text = "> ", len(dup_rows), " rows dropped"
+    bhUtils.loggerX(out_dir, text)
 else:
-    print("> No rows dropped")
+    text = "> No rows dropped"
+    bhUtils.loggerX(out_dir, text)
 
-print("> Check for duplicates finished!")
-print("-------------------")
+text = "> Check for duplicates finished!"
+bhUtils.loggerX(out_dir, text)
+#print("-------------------")
 
 ## Select only relevant columns
 data = data[sel_cols]
-print("> Shape, only relevant columns", data.shape)
+text = "> Shape, only relevant columns", data.shape
+bhUtils.loggerX(out_dir, text)
 
 
 ################################
@@ -165,12 +187,14 @@ print("> Shape, only relevant columns", data.shape)
 ################################
 # ## Convert dataframe to geodataframe "gdf" and set inital crs to epsg:2056
 private_bh = bhUtils.makeGeospatial(data, 2056)
-print("> Geodataframe created")
-print("> CRS set to : ", private_bh.crs)
-print("-------------------")
+text = "> Geodataframe created"
+bhUtils.loggerX(out_dir, text)
+text = "> CRS set to : ", private_bh.crs
+bhUtils.loggerX(out_dir, text)
+#print("-------------------")
 
 ################################
-## Plot GeoDataFrame
+## Plot PRIVATE data
 ################################
 
 ## Load swiss boundary from shapefile
@@ -183,26 +207,37 @@ ch_peri = ch_peri[ch_peri['ICC'] == 'CH']
 ch_peri_buf = ch_peri.buffer(20000)
 
 ## Plot GeoDataFrame together with swiss boundary
-base = ch_peri.plot(color='white', edgecolor='black')
-lyr_1 = ch_peri_buf.plot(ax=base, edgecolor='blue', facecolor='none')
-private_bh.plot(ax=lyr_1, color='red', markersize=5);
-
-print("> Plot Geodataframe")
+fig2, ax = plt.subplots()
+fig2.suptitle('Geographic distribution of PRIVATE data')
+ax.set_aspect('equal')
+ch_peri.plot(ax=ax, color='white', edgecolor='black')
+ch_peri_buf.plot(ax=ax, edgecolor='blue', facecolor='none')
+private_bh.plot(ax=ax, color='red', markersize=5)
 plt.show()
-print("-------------------")
+
+pname = "private_bh_" + now + ".jpg"
+ppath = os.path.join(out_dir, pname)
+fig2.savefig(ppath)
+plt.close()
+
+text = "> PRIVATE data plotted"
+bhUtils.loggerX(out_dir, text)
+#print("-------------------")
 
 ################################
 ## Clip and reproject
 ################################
 ## Clip the data using GeoPandas clip
 private_bh = gpd.clip(private_bh, ch_peri)
-print("> Geodataframe clipped.")
-print("-------------------")
+text = "> Geodataframe clipped."
+bhUtils.loggerX(out_dir, text)
+#print("-------------------")
 
 ## Reproject Geodataframe and write re-projected coordinates into new column
 private_bh = bhUtils.reprojecter(private_bh)
-print("> Reprojected CRS: ", private_bh.crs)
-print("-------------------")
+text = "> Reprojected CRS: ", private_bh.crs
+bhUtils.loggerX(out_dir, text)
+#print("-------------------")
 
 
 ################################
@@ -214,11 +249,13 @@ private_bh.columns = conf["export_pri_cols"]
 
 ## Export data to csv
 bhUtils.exporter(out_dir, private_bh_fname, private_bh)
-print("> Private data exported!")
-print("-------------------")
+text = "> Private data exported!"
+bhUtils.loggerX(out_dir, text)
+#print("-------------------")
 
 
-print("> Data processing finished!")
+text = "> Data processing finished!"
+bhUtils.loggerX(out_dir, text)
 print("===================")
 
 ################################
