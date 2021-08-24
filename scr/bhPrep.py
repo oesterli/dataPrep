@@ -28,7 +28,7 @@ with open("/Users/oesterli/Documents/_temp/bhPrep/scr/config.json",) as file:
 ## Specify variables
 now = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
-source_file = conf["source_gpkg"]
+source_file = conf["source_csv"]
 data_folder = conf["data_path"]
 ext = conf["file_ext"]
 
@@ -47,17 +47,20 @@ bh_2d_fname = conf["bh_2d_fname"]
 ################################
 
 ## Load a single file
-#out_data = bhUtils.singleDataLoader(source_file)
-#print('> Data loaded')
-#print("-------------------")
+#data = bhUtils.singleDataLoader(source_file)
+
+## Log checkpoint
+#text = "> SingleDataLoader: ", source_file, " loaded!"
+#bhUtils.loggerX(out_dir, text)
+##print("-------------------")
 
 ## Read multiple files
 files, data = bhUtils.multiDataLoader(data_folder, ext)
 
 ## Log checkpoint
-text = "> Files loaded: ", files
+text = "> MultiDataLaoder. Files loaded: ", files
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 
 ################################
@@ -72,7 +75,7 @@ bhUtils.loggerX(out_dir, text)
 ## Log checkpoint
 text = data.info(verbose=True)
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 
 ################################
@@ -85,7 +88,7 @@ num_layers = data.shape[0]
 ## Log checkpoint
 text = "> Number of individual borehole: ", num_bh, "\n", "> Number of individual layers: ", num_layers
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 
 ## Calculate number of layers per borehole
@@ -114,7 +117,7 @@ plt.close()
 ## Log checkpoint
 text = "> RAW data plotted"
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 
 ################################
@@ -144,7 +147,7 @@ bhUtils.exporter(out_dir, raw_bh_fname, data)
 ## Log checkpoint
 text = "> Raw data exported!"
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 ################################
 ## Process PRIVATE data
@@ -188,7 +191,7 @@ else:
 ## Log checkpoint
 text = "> Check for duplicates finished!"
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 ## Select only relevant columns
 data = data[sel_cols]
@@ -207,7 +210,7 @@ private_bh = bhUtils.makeGeospatial(data, 2056)
 ## Log checkpoint
 text = "> Geodataframe created", "\n", "> CRS set to : ", private_bh.crs
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 
 ################################
@@ -247,7 +250,7 @@ plt.close()
 ## Log checkpoint
 text = "> PRIVATE data plotted"
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 ## Check Columns
 ## Log checkpoint
@@ -263,7 +266,7 @@ private_bh = gpd.clip(private_bh, ch_peri)
 ## Log checkpoint
 text = "> Geodataframe clipped."
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 ## Reproject Geodataframe and write re-projected coordinates into new column
 private_bh = bhUtils.reprojecter(private_bh)
@@ -271,7 +274,7 @@ private_bh = bhUtils.reprojecter(private_bh)
 ## Log checkpoint
 text = "> Reprojected CRS: ", private_bh.crs
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 
 ################################
@@ -287,7 +290,7 @@ bhUtils.exporter(out_dir, private_bh_fname, private_bh)
 ## Log checkpoint
 text = "> Private data exported!"
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 ## Log checkpoint
 text = "> Data processing finished!"
@@ -382,7 +385,7 @@ bhUtils.exporter(out_dir, public_bh_fname, public_bh)
 ## Log checkpoint
 text = "> Public data exported!"
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 
 ################################
@@ -429,7 +432,7 @@ bhUtils.exporter(out_dir, bh_2d_fname, bh_2d)
 ## Log checkpoint
 text = "> 2D data exported!"
 bhUtils.loggerX(out_dir, text)
-#print("-------------------")
+##print("-------------------")
 
 print("===================")
 print(">>> Data processing terminated!")
