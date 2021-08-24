@@ -11,6 +11,7 @@
   "raw_bh_fname" : "bh_raw",
   "private_bh_fname" : "private_bh",
   "public_bh_fname" : "public_bh",
+  "bh_2d_fname" : "bh_2D",
   "sel_cols" : [
     "index", "XCOORD","YCOORD","ZCOORDB","ORIGNAME","NAMEPUB",
     "SHORTNAME", "BOHREDAT","BOHRTYP", "GRUND","RESTRICTIO",
@@ -29,7 +30,7 @@
     "bh_pri_TIEFEMD","bh_pri_DEPTHFROM","bh_pri_DEPTHTO","bh_pri_LAYERDESC",
     "bh_pri_ORIGGEOL","bh_pri_LITHOLOGY", "bh_pri_LITHOSTRAT", 
     "bh_pri_CHRONOSTR", "bh_pri_TECTO", "bh_pri_USCS1", "bh_pri_USCS2", 
-    "bh_pri_USCS3","bh_pri_geometry", "bh_pri_geom4326", "bh_pri_x4326", 
+    "bh_pri_USCS3","bh_pri_geom4326", "bh_pri_geom2056", "bh_pri_x4326",
     "bh_pri_y4326"
     ],
   "export_pub_cols" : [
@@ -39,7 +40,17 @@
     "bh_pub_TIEFEMD","bh_pub_DEPTHFROM","bh_pub_DEPTHTO","bh_pub_LAYERDESC",
     "bh_pub_ORIGGEOL","bh_pub_LITHOLOGY", "bh_pub_LITHOSTRAT", 
     "bh_pub_CHRONOSTR", "bh_pub_TECTO", "bh_pub_USCS1", "bh_pub_USCS2", 
-    "bh_pub_USCS3","bh_pub_geometry", "bh_pub_geom4326", "bh_pub_x4326", 
+    "bh_pub_USCS3","bh_pub_geom4326", "bh_pub_geom2056", "bh_pub_x4326",
     "bh_pub_y4326"
-    ]
+    ],
+  "cols_pub" : [
+    "index", "XCOORD", "YCOORD", "ZCOORDB", "ORIGNAME", "NAMEPUB","SHORTNAME",
+    "BOHREDAT", "BOHRTYP", "GRUND", "RESTRICTIO", "TIEFEMD", "DEPTHFROM", "DEPTHTO",
+    "LAYERDESC", "ORIGGEOL", "LITHOLOGY", "LITHOSTRAT", "CHRONOSTR", "TECTO",
+    "USCS1", "USCS2", "USCS3", "geom4326","geom2056", "x4326", "y4326"
+  ],
+  "cols_2D" : [
+    "index","XCOORD","YCOORD","x4326", "y4326", "ZCOORDB","ORIGNAME","NAMEPUB", 
+    "SHORTNAME", "BOHREDAT","BOHRTYP", "GRUND","RESTRICTIO","TIEFEMD"
+  ]
 }

@@ -1,0 +1,21 @@
+{
+  "bsp_key" : "bsp_value",
+  "path01" : "/Users/oesterli/Documents/_temp/bhPrep/scr/",
+  "sel_cols" : [
+    "index", "XCOORD","YCOORD","ZCOORDB"
+    ],
+  "test_data" : {
+    "index": {
+      "meta": "Index des Records",
+      "value": 123456
+    },
+    "XCOORD" : {
+      "meta": "x-Koordinates des Records",
+      "value": 2600000
+    },
+    "YCOORD": {
+      "meta": "y-Koordinates des Records",
+      "value": 1200000
+    }
+  }
+}
