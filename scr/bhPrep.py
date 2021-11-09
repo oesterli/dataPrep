@@ -3,7 +3,7 @@
 #################################
 ## IMPORTS
 #################################
-# from IPython.display import display    # disabled since Jypiter toolkit
+#from IPython.display import display    # disabled since Jypiter toolkit
 import os
 import gc
 import datetime
@@ -22,7 +22,7 @@ import bhUtils
 ################################
 ## Load Configuration
 ################################
-with open("/Users/oesterli/Documents/_temp/bhPrep/scr/config.json",) as file:
+with open(r"C:\Projects\bhPrep\scr\config.json",) as file:
     conf = json.load(file)
 
 ## Specify variables
@@ -42,6 +42,7 @@ private_bh_fname = conf["private_bh_fname"]
 public_bh_fname = conf["public_bh_fname"]
 bh_2d_fname = conf["bh_2d_fname"]
 
+print("variables defined")
 ################################
 ## Load data
 ################################
@@ -56,6 +57,7 @@ bh_2d_fname = conf["bh_2d_fname"]
 
 ## Read multiple files
 files, data = bhUtils.multiDataLoader(data_folder, ext)
+print("input files", files)
 
 ## Log checkpoint
 text = "> MultiDataLaoder. Files loaded: ", files
@@ -312,7 +314,7 @@ public_bh = private_bh
 ################################
 ## Delete dataframe and free memory
 ################################
-del(private_bh)
+del private_bh
 gc.collect()
 
 ## Check Columns
