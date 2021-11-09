@@ -3,16 +3,16 @@
 #################################
 ## IMPORTS
 #################################
-from IPython.display import display
+# from IPython.display import display    # disabled since Jypiter toolkit
 import os
 import gc
 import datetime
 import json
 import pandas as pd
 import geopandas as gpd
-from shapely.geometry import Point
-from pyproj import Proj
-import matplotlib as mpl
+from shapely.geometry import Point       # not installed module
+from pyproj import Proj                  # not installed module
+import matplotlib as mpl                 # not installed module
 import matplotlib.pyplot as plt
 
 # Functions for processing
