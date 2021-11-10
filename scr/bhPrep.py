@@ -10,9 +10,9 @@ import datetime
 import json
 import pandas as pd
 import geopandas as gpd
-from shapely.geometry import Point       # not installed module
-from pyproj import Proj                  # not installed module
-import matplotlib as mpl                 # not installed module
+from shapely.geometry import Point
+from pyproj import Proj
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 # Functions for processing
@@ -60,7 +60,7 @@ files, data = bhUtils.multiDataLoader(data_folder, ext)
 print("input files", files)
 
 ## Log checkpoint
-text = "> MultiDataLaoder. Files loaded: ", files
+text = "> MultiDataLoader. Files loaded: ", files
 bhUtils.loggerX(out_dir, text)
 ##print("-------------------")
 
@@ -75,7 +75,7 @@ bhUtils.loggerX(out_dir, text)
 
 ## Display all columns and dtypes
 ## Log checkpoint
-text = data.info(verbose=True)
+text = data.info(verbose=True)      # what means this? verbose = true for a big logging output; answer of programm in log is "none"
 bhUtils.loggerX(out_dir, text)
 ##print("-------------------")
 
@@ -204,7 +204,7 @@ bhUtils.loggerX(out_dir, text)
 
 
 ################################
-## Convert DataFrame to GoeDataFrame
+## Convert DataFrame to GeoDataFrame
 ################################
 # ## Convert dataframe to geodataframe "gdf" and set inital crs to epsg:2056
 private_bh = bhUtils.makeGeospatial(data, 2056)
@@ -230,7 +230,7 @@ gc.collect()
 ch_peri = gpd.read_file(source_ch_peri)
 
 ## Select only swiss perimeter
-ch_peri = ch_peri[ch_peri['ICC'] == 'CH']
+#ch_peri = ch_peri[ch_peri['ICC'] == 'CH']
 
 ## Create buffer around CH-Perimeter
 ch_peri_buf = ch_peri.buffer(20000)
