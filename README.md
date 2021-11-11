@@ -1,9 +1,12 @@
+----------------english below-----------------
+
+
 Der Ordner "bhPrep" beinhaltet folgende Scripts: 
 - bhPrep.py : Hauptscript 
 - bhUtils.py : Befehle des Hauptscripts 
-- config.json: Pfade 
+- config.json: Pfade und Kolonnenauswahl für "output".csv-Tabellen 
 
-"bhPrep" verwendet Bohrdaten aus GeoDIN, unterscheidet zwischen privaten, öffentlich zugänglichen und 2D Bohrdaten und speichert die Daten in csv-Tabelle mit den wichtigsten Informationen. Die wichtigsten Schritte werden in einer log-Textdatei dokumentiert. 
+"bhPrep" verwendet Bohrdaten aus GeoDIN, unterscheidet zwischen privaten, öffentlich zugänglichen und 2D Bohrdaten und speichert die Daten in csv-Tabelle mit den wichtigsten Informationen. Die einzelnen Schritte werden in einer log-Textdatei dokumentiert. 
 - Imports: Die nötigen Module werden importiert. 
 - Load Configuration: Definitionen der Variablen und dazugehörige Pfade
 - Load data: Daten werden gelesen via MultiDataLoader und in Tabelle umgewandelt mit Modul "panda". Bei Dateiformaten wie .shp, .gpkg, .csv werden die Daten via SingleDataLoader als rawData ausgegeben. Dokumentation der geladenen Files im log-File im Ordner "output". 
@@ -27,3 +30,37 @@ Der Ordner "bhPrep" beinhaltet folgende Scripts:
 	Die nun nicht mehr gebrauchten Kolonnen "start" und "end" werden wieder gelöscht und die Daten im "public_bh" nach "SHORTNAME" und "DEPTHFROM" sortiert. 
 - Export PUBLIC data: Daten werden als public_bh_datum_uhrzeit.csv exportiert. 
 - Process 2D data: Kolonnennamen werden wieder zurückgesetzt; public_bh ist noch geordnet und kann darum einfach auf erste Schicht reduziert werden, um die Einträge für map.geo.admin.ch in 2D zu erhalten. URL wird generiert. Die resultierende Tabelle wird als bh_2D_datum_uhrzeit.csv exportiert. 
+
+
+
+
+
+The folder "bhPrep" contains the following scripts: 
+- bhPrep.py : main script 
+- bhUtils.py : commands of the main script 
+- config.json : paths and column selections of output .csv tables
+
+"bhPrep" uses drilling data from GeoDIN, distinguishes between private, public and 2D drilling data and stores the data in csv table with the most important information. The individual steps are documented in a log text file. 
+- Imports: The necessary modules are imported. 
+- Load Configuration: Definitions of variables and associated paths.
+- Load data: Data is read by MultiDataLoader and converted into a table with the module "panda". For file formats such as .shp, .gpkg, .csv, the data output is named rawData.csv by the SingleDataLoader. Documentation of the loaded files goes in the log file in the "output" folder. 
+- Display data: 
+- Statistics: Calculations of the number of layers per hole, documentation in the log file in the folder "output". 
+- Plot RAW data: Diagram of the number of boreholes per depth range and their geographical distribution is created and saved as bh_raw_datum_uhrzeit.jpg. Note this in the log file. 
+- Processing RAW data: Columns are sorted alphabetically, lines are sorted according to columns "SHORTNAME" and "DEPTHFROM". The "index" column is added and selected column contents are systematically rounded. 
+- Export RAW data: RAW data file is exported as .csv and logged in the log file. 
+- Process PRIVATE data: Duplicates are excluded by column; then equal lines are excluded and blank lines are skipped. The remaining data is counted and logged in the log file. 
+- Convert DataFrame to GeoDataFrame: All data are named "private_bh" and converted to a GeoDataFrame in EPSG 2056. Memory is then deleted again. 
+- Plot PRIVATE data: Swiss border with 20km buffer zone is set as perimeter and displayed together with GeoDataFrame as diagram. Diagram is saved under private_bh_datum_uhrzeit.jpg. Boreholes lying in the perimeter (private_bh) are converted as a clip to EPSG 4326 and saved in a new column. 
+- Export PRIVATE data: Columns are renamed according to config.json for export and get exported. Data is exported as private_bh_date_time.csv.  
+- Process PUBLIC data: "private_bh" is renamed to "public_bh". 
+- Delete dataframe and free memory: "private_bh" is deleted from memory. Columns "start" and "end" are added to "public_bh". "public_bh" is split according to restrictions. Layers with restrictions (b and g) are sorted by "DEPTHFROM" and shortened to one layer according to "SHORTNAME" (duplicates are deleted so that only one layer remains). 
+	g: Restricted unique data 
+	b: Restricted until unique data 
+	f: Non-restricted unique data 
+	Depth details of private boreholes are overwritten with "start" and "end" from previously created columns.
+	Details of private boreholes are overwritten with "Undefined". 
+	With pd.concat the boreholes without restrictions (f) and the boreholes with restrictions (b and g) are concatenated again. 
+	The now no longer used columns "start" and "end" are deleted again and the data in "public_bh" are sorted by "SHORTNAME" and "DEPTHFROM". 
+- Export PUBLIC data: Data is exported as public_bh_date_time.csv. 
+- Process 2D data: Column names are reset; public_bh is still ordered and can therefore simply be reduced to first layer to get the entries for map.geo.admin.ch in 2D. URL is generated. The resulting table is exported as bh_2D_datum_uhrzeit.csv. 
