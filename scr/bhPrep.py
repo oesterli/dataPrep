@@ -14,6 +14,8 @@ from shapely.geometry import Point
 from pyproj import Proj
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+import io
+
 
 # Functions for processing
 import bhUtils
@@ -75,8 +77,15 @@ bhUtils.loggerX(out_dir, text)
 
 ## Display all columns and dtypes
 ## Log checkpoint
-text = data.info(verbose=True)      # what means this? verbose = true for a big logging output; answer of programm in log is "none"
+
+buffer = io.StringIO()
+data.info(buf=buffer)
+text = buffer.getvalue()
+
+# text = data.info(buf)
+print(text)
 bhUtils.loggerX(out_dir, text)
+
 ##print("-------------------")
 
 

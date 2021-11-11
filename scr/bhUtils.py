@@ -6,7 +6,10 @@ import glob
 import pandas as pd
 from shapely.geometry import Point
 
+import matplotlib.pyplot as plt
 
+
+nowExport = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 now = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
 # Load several files of the same format
@@ -71,8 +74,31 @@ def exporter(outDir, outFname, expData):
     :param outFname:
     :param expData:
     """
-    outFile = os.path.join(outDir, '_'.join([outFname, str(now).zfill(2), ]) + '.csv')
+    outFile = os.path.join(outDir, '_'.join([outFname, str(nowExport).zfill(2), ]) + '.csv')
     expData.to_csv(outFile, index=None, sep=';')
+
+
+def exporterX(outDir, outFname, expData, ext):
+    """
+
+    :param outDir:
+    :param outFname:
+    :param expData:
+    :param ext: file extension in the form ".csv", ".jpg", ".txt", ".xlsx"
+    """
+
+    if ext == ".csv":
+        outFile = os.path.join(outDir, '_'.join([outFname, str(nowExport).zfill(2), ]) + ext)
+        expData.to_csv(outFile, index=None, sep=';')
+    elif ext == ".jpg":
+        #print("Not yet implemented!")
+        pname = "private_bh_" + nowExport + ext
+        ppath = os.path.join(out_dir, pname)
+        expData.savefig(ppath)
+        plt.close()
+    else:
+        print("File extension: ", ext," unknown!")
+
 
 def makeGeospatial(df, inCrs):
     """
@@ -113,6 +139,7 @@ def loggerX(outdir, text):
     :param text:
     :return:
     """
+
     fname = "log" + "_" + now + ".txt"
     logFile = os.path.join(outdir, fname)
 
