@@ -8,19 +8,19 @@ from shapely.geometry import Point
 
 import matplotlib.pyplot as plt
 
-
 nowExport = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 now = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
+
 # Load several files of the same format
-def multiDataLoader(sourceFolder, extention):
+def multiDataLoader(sourceFolder, extension):
     """
 
-    :param sourceFolder:
-    :param extention:
-    :return:
+    :param sourceFolder: Folder with multiple files to load
+    :param extension: .xlsx
+    :return: all data from multiple files are loaded in "multiData" and got an index number
     """
-    files = glob.glob(os.path.join(sourceFolder, extention))
+    files = glob.glob(os.path.join(sourceFolder, extension))
     multiData = pd.DataFrame()
 
     for f in files:
@@ -28,16 +28,18 @@ def multiDataLoader(sourceFolder, extention):
         multiData = multiData.append(df, ignore_index=True, sort='false')
     return files, multiData
 
+
 def singleDataLoader(sourceFile):
     """
 
-    :param sourceFile:
-    :return:
+    :param sourceFile: Single File with specific extension
+    :param extension: ".gpkg", ".shp" or ".csv"
+    :return: Dataframe named "rawData" with data from loaded file and displayed dimensionality of data (nb of rows and columns)
     """
     if sourceFile.lower().endswith('.gpkg'):
 
         # works only in IPython Jupyter Notebook
-        #data = gpdread_file(sourceFile)
+        # data = gpdread_file(sourceFile)
 
         with fiona.Env(OGR_GPKG_FOREIGN_KEY_CHECK='NO'):
             data = fiona.open(sourceFile)
@@ -67,56 +69,58 @@ def singleDataLoader(sourceFile):
 
     return rawData
 
+
 def exporter(outDir, outFname, expData):
     """
 
-    :param outDir:
-    :param outFname:
-    :param expData:
+    :param outDir: path to folder where output file is saved
+    :param outFname: name of the output file
+    :param expData: dataframe which will be exported
     """
     outFile = os.path.join(outDir, '_'.join([outFname, str(nowExport).zfill(2), ]) + '.csv')
-    expData.to_csv(outFile, index=None, sep=';')
+    expData.to_csv(outFile, index=None, sep=';', encoding='latin1')
 
 
 def exporterX(outDir, outFname, expData, ext):
     """
 
-    :param outDir:
-    :param outFname:
-    :param expData:
+    :param outDir: path to folder where output file is saved
+    :param outFname: name of the output file,
+    :param expData: dataframe which will be exported
     :param ext: file extension in the form ".csv", ".jpg", ".txt", ".xlsx"
     """
 
     if ext == ".csv":
         outFile = os.path.join(outDir, '_'.join([outFname, str(nowExport).zfill(2), ]) + ext)
-        expData.to_csv(outFile, index=None, sep=';')
+        expData.to_csv(outFile, index=None, sep=';', encoding='latin1')
     elif ext == ".jpg":
-        #print("Not yet implemented!")
+        # print("Not yet implemented!")
         pname = "private_bh_" + nowExport + ext
         ppath = os.path.join(out_dir, pname)
         expData.savefig(ppath)
         plt.close()
     else:
-        print("File extension: ", ext," unknown!")
+        print("File extension: ", ext, " unknown!")
 
 
 def makeGeospatial(df, inCrs):
     """
 
-    :param df:
-    :param inCrs:
-    :return:
+    :param df: panda dataframe (pd.dataFrame, df) for georeferencing
+    :param inCrs: crs code for needed projection
+    :return: georeferenced geodataframe of df set to Swiss CH1903+ / LV95
     """
     ## Convert dataframe to geodataframe "gdf" and set inital crs to epsg:2056
     geom = [Point(xy) for xy in zip(df.XCOORD, df.YCOORD)]
     gdf = gpd.GeoDataFrame(df, crs=inCrs, geometry=geom)
     return gdf
 
+
 def reprojecter(gdf):
     """
 
-    :param gdf:
-    :return:
+    :param gdf: georeferenced geodataframe
+    :return: gdf of epsg:2056 reprojected on epsg:4326 and split into 2 columns x and y
     """
     reproGeom = "geom" + gdf.crs.to_string().split(':')[1]
     gdf[reproGeom] = gdf["geometry"]
@@ -135,16 +139,16 @@ def reprojecter(gdf):
 def loggerX(outdir, text):
     """
 
-    :param outdir:
-    :param text:
-    :return:
+    :param outdir: path to folder where output file is saved
+    :param text: text which will be write down in the log file
+    :return: log file which records pre-defined steps to confirm their successful execution
     """
 
     fname = "log" + "_" + now + ".txt"
     logFile = os.path.join(outdir, fname)
 
     with open(logFile, 'a') as f:
-        print(now, text, sep=';', file=f)
+        print(now, text, sep=';', encoding='latin1', file=f)
 
     # print date, time and message to stdout
     print(now, text)
