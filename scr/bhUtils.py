@@ -70,18 +70,19 @@ def singleDataLoader(sourceFile):
     return rawData
 
 
-def exporter(outDir, outFname, expData):
+def exporter(outDir, outFname, expData, enc):
     """
 
     :param outDir: path to folder where output file is saved
     :param outFname: name of the output file
     :param expData: dataframe which will be exported
+    :param enc: translation of output language
     """
     outFile = os.path.join(outDir, '_'.join([outFname, str(nowExport).zfill(2), ]) + '.csv')
-    expData.to_csv(outFile, index=None, sep=';', encoding='latin1')
+    expData.to_csv(outFile, index=None, sep=';', encoding=enc)
 
 
-def exporterX(outDir, outFname, expData, ext):
+def exporterX(outDir, outFname, expData, enc):
     """
 
     :param outDir: path to folder where output file is saved
@@ -92,7 +93,7 @@ def exporterX(outDir, outFname, expData, ext):
 
     if ext == ".csv":
         outFile = os.path.join(outDir, '_'.join([outFname, str(nowExport).zfill(2), ]) + ext)
-        expData.to_csv(outFile, index=None, sep=';', encoding='latin1')
+        expData.to_csv(outFile, index=None, sep=';', encoding=enc)
     elif ext == ".jpg":
         # print("Not yet implemented!")
         pname = "private_bh_" + nowExport + ext

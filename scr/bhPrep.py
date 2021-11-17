@@ -33,6 +33,7 @@ now = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 source_file = conf["source_csv"]
 data_folder = conf["data_path"]
 ext = conf["file_ext"]
+enc = conf["file_encoding"]
 
 source_ch_peri = conf["source_CH-perimeter"]
 
@@ -153,7 +154,7 @@ data['DEPTHTO'] = data['DEPTHTO'].round(decimals=2)
 ## Export RAW data
 ################################
 ## Export data to csv
-bhUtils.exporter(out_dir, raw_bh_fname, data)
+bhUtils.exporter(out_dir, raw_bh_fname, data, enc)
 
 ## Log checkpoint
 text = "> Raw data exported!"
@@ -296,7 +297,7 @@ private_bh.columns = conf["export_pri_cols"]
 
 
 ## Export data to csv
-bhUtils.exporter(out_dir, private_bh_fname, private_bh)
+bhUtils.exporter(out_dir, private_bh_fname, private_bh, enc)
 
 ## Log checkpoint
 text = "> Private data exported!"
@@ -391,7 +392,7 @@ bhUtils.loggerX(out_dir, text)
 public_bh.columns = conf["export_pub_cols"]
 
 ## Export data to csv
-bhUtils.exporter(out_dir, public_bh_fname, public_bh)
+bhUtils.exporter(out_dir, public_bh_fname, public_bh, enc)
 
 ## Log checkpoint
 text = "> Public data exported!"
@@ -438,7 +439,7 @@ bhUtils.loggerX(out_dir, text)
 public_bh.columns = conf["export_pub_cols"]
 
 ## Export data to csv
-bhUtils.exporter(out_dir, bh_2d_fname, bh_2d)
+bhUtils.exporter(out_dir, bh_2d_fname, bh_2d, enc)
 
 ## Log checkpoint
 text = "> 2D data exported!"
