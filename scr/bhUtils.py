@@ -148,7 +148,7 @@ def loggerX(outdir, text):
     logFile = os.path.join(outdir, fname)
 
     with open(logFile, 'a') as f:
-        print(now, text, sep=';', encoding='latin1', file=f)
+        print(now, text, sep=';', file=f)
 
     # print date, time and message to stdout
     print(now, text)
