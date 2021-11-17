@@ -10,7 +10,7 @@ Der Ordner "bhPrep" beinhaltet folgende Scripts:
 - Imports: Die nötigen Module werden importiert. 
 - Load Configuration: Definitionen der Variablen und dazugehörige Pfade
 - Load data: Daten werden gelesen via MultiDataLoader und in Tabelle umgewandelt mit Modul "panda". Bei Dateiformaten wie .shp, .gpkg, .csv werden die Daten via SingleDataLoader als rawData ausgegeben. Dokumentation der geladenen Files im log-File im Ordner "output". 
-- Display data: 
+- Display data: Anzahl Zeilen (Indexnummern), Spalten, Infos über Datentypen und benötigter Speicherplatz werden gezählt und im Log-File protokolliert. 
 - Statistics: Berechnungen zur Anzahl Layers pro Bohrung, Dokumentation dazu im log-File im Ordner "output". 
 - Plot RAW data: Diagramm der Anzahl Bohrungen pro Tiefenbereich und deren geographische Verteilung wird erstellt und als bh_raw_datum_uhrzeit.jpg gespeichert. Notiz dazu im log-File. 
 - Processing RAW data: Kolonnen (Columns) werden alphabetisch geordnet, Linien (Lines) werden gemäss Kolonnen "SHORTNAME" und "DEPTHFROM" sortiert. "index" Kolonne wird hinzugefügt und ausgewählte Spalten-Inhalte systematisch gerundet. 
@@ -44,7 +44,7 @@ The folder "bhPrep" contains the following scripts:
 - Imports: The necessary modules are imported. 
 - Load Configuration: Definitions of variables and associated paths.
 - Load data: Data is read by MultiDataLoader and converted into a table with the module "panda". For file formats such as .shp, .gpkg, .csv, the data output is named rawData.csv by the SingleDataLoader. Documentation of the loaded files goes in the log file in the "output" folder. 
-- Display data: 
+- Display data: Number of lines (index numbers), columns, data type information and needed memory space are counted and recorded in the log file.
 - Statistics: Calculations of the number of layers per hole, documentation in the log file in the folder "output". 
 - Plot RAW data: Diagram of the number of boreholes per depth range and their geographical distribution is created and saved as bh_raw_datum_uhrzeit.jpg. Note this in the log file. 
 - Processing RAW data: Columns are sorted alphabetically, lines are sorted according to columns "SHORTNAME" and "DEPTHFROM". The "index" column is added and selected column contents are systematically rounded. 
