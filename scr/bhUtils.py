@@ -24,7 +24,7 @@ def multiDataLoader(sourceFolder, extension):
     multiData = pd.DataFrame()
 
     for f in files:
-        df = pd.read_excel(f, engine='openpyxl')
+        df = pd.read_excel(f)
         multiData = multiData.append(df, ignore_index=True, sort='false')
     return files, multiData
 

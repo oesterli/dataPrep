@@ -238,9 +238,11 @@ gc.collect()
 
 ## Load swiss boundary from shapefile
 ch_peri = gpd.read_file(source_ch_peri)
+text = ch_peri.crs
+bhUtils.loggerX(out_dir, text)
 
 ## Select only swiss perimeter
-#ch_peri = ch_peri[ch_peri['ICC'] == 'CH']
+ch_peri = ch_peri[ch_peri['ICC'] == 'CH']
 
 ## Create buffer around CH-Perimeter
 ch_peri_buf = ch_peri.buffer(20000)
@@ -273,7 +275,7 @@ bhUtils.loggerX(out_dir, text)
 ## Clip and reproject
 ################################
 ## Clip the data using GeoPandas clip
-private_bh = gpd.clip(private_bh, ch_peri)
+private_bh = private_bh.clip(ch_peri_buf)
 
 ## Log checkpoint
 text = "> Geodataframe clipped."
