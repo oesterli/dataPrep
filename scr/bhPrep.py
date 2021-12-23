@@ -1,25 +1,20 @@
 # Main Program
 
+import datetime
+import gc
+import io
+import json
 #################################
 ## IMPORTS
 #################################
-#from IPython.display import display    # disabled since Jypiter toolkit
+# from IPython.display import display    # disabled since Jypiter toolkit
 import os
-import gc
-import datetime
-import json
-import pandas as pd
-import geopandas as gpd
-from shapely.geometry import Point
-from pyproj import Proj
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-import io
-
 
 # Functions for processing
 import bhUtils
-
+import geopandas as gpd
+import matplotlib.pyplot as plt
+import pandas as pd
 
 ################################
 ## Load Configuration
@@ -350,7 +345,9 @@ df_b = public_bh.loc[public_bh["RESTRICTIO"] == "b"].sort_values(by=["SHORTNAME"
 df_sum = df_g.shape[0] + df_b.shape[0] + df_f.shape[0]
 
 ## Log checkpoint
-text = "All unique data: ",public_bh.shape, "\n", "Restricted unique data: ", df_g.shape, "\n", "Restricted until unique data: ", df_b.shape, "\n", "Non-restricted unique data: ", df_f.shape, "\n", "Restricted + restircted until + Non-restricted data: ", df_sum, "\n", "Difference between all unique data and restriceted + Non-restricted: ", public_bh.shape[0] - df_sum
+text = "All unique data: ",public_bh.shape, "\n", "Restricted unique data: ", df_g.shape, "\n", "Restricted until unique data: ", \
+       df_b.shape, "\n", "Non-restricted unique data: ", df_f.shape, "\n", "Restricted + restircted until + Non-restricted data: ", \
+       df_sum, "\n", "Difference between all unique data and restriceted + Non-restricted: ", public_bh.shape[0] - df_sum
 bhUtils.loggerX(out_dir, text)
 
 ## delete duplicates in df_g
@@ -428,7 +425,9 @@ link_key = 'zoom_to='
 link_sep = ','
 
 # create Link
-bh_2d['link'] = baseURL + layer_key + layer_value + para_sep + layer_vis + layer_vis_value + para_sep + layer_trans + layer_trans_value + para_sep + link_key + bh_2d['x4326'].map(str) + link_sep + bh_2d['y4326'].map(str) + link_sep + '0'
+bh_2d['link'] = baseURL + layer_key + layer_value + para_sep + layer_vis + layer_vis_value + para_sep \
+                + layer_trans + layer_trans_value + para_sep + link_key + bh_2d['x4326'].map(str) \
+                + link_sep + bh_2d['y4326'].map(str) + link_sep + '0'
 
 ## Log checkpoint
 text = "Info 2D data", bh_2d.info(verbose=True)

@@ -1,12 +1,12 @@
-import geopandas as gpd
-import fiona
-import os
 import datetime
 import glob
+import os
+
+import fiona
+import geopandas as gpd
+import matplotlib.pyplot as plt
 import pandas as pd
 from shapely.geometry import Point
-
-import matplotlib.pyplot as plt
 
 nowExport = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 now = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
@@ -15,7 +15,6 @@ now = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 # Load several files of the same format
 def multiDataLoader(sourceFolder, extension):
     """
-
     :param sourceFolder: Folder with multiple files to load
     :param extension: .xlsx
     :return: all data from multiple files are loaded in "multiData" and got an index number
@@ -26,8 +25,8 @@ def multiDataLoader(sourceFolder, extension):
     for f in files:
         df = pd.read_excel(f)
         multiData = multiData.append(df, ignore_index=True, sort='false')
-    return files, multiData
 
+    return files, multiData
 
 def singleDataLoader(sourceFile):
     """
