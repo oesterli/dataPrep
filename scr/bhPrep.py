@@ -1,28 +1,25 @@
 # Main Program
 
+import datetime
+import gc
+import io
+import json
 #################################
 ## IMPORTS
 #################################
-from IPython.display import display
+# from IPython.display import display    # disabled since Jypiter toolkit
 import os
-import gc
-import datetime
-import json
-import pandas as pd
-import geopandas as gpd
-from shapely.geometry import Point
-from pyproj import Proj
-import matplotlib as mpl
-import matplotlib.pyplot as plt
 
 # Functions for processing
 import bhUtils
-
+import geopandas as gpd
+import matplotlib.pyplot as plt
+import pandas as pd
 
 ################################
 ## Load Configuration
 ################################
-with open("/Users/oesterli/Documents/_temp/bhPrep/scr/config.json",) as file:
+with open(r"C:\Projects\bhPrep\scr\config.json",) as file:
     conf = json.load(file)
 
 ## Specify variables
@@ -31,6 +28,7 @@ now = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 source_file = conf["source_csv"]
 data_folder = conf["data_path"]
 ext = conf["file_ext"]
+enc = conf["file_encoding"]
 
 source_ch_peri = conf["source_CH-perimeter"]
 
@@ -42,6 +40,7 @@ private_bh_fname = conf["private_bh_fname"]
 public_bh_fname = conf["public_bh_fname"]
 bh_2d_fname = conf["bh_2d_fname"]
 
+print("variables defined")
 ################################
 ## Load data
 ################################
@@ -56,9 +55,10 @@ bh_2d_fname = conf["bh_2d_fname"]
 
 ## Read multiple files
 files, data = bhUtils.multiDataLoader(data_folder, ext)
+print("input files", files)
 
 ## Log checkpoint
-text = "> MultiDataLaoder. Files loaded: ", files
+text = "> MultiDataLoader. Files loaded: ", files
 bhUtils.loggerX(out_dir, text)
 ##print("-------------------")
 
@@ -73,8 +73,15 @@ bhUtils.loggerX(out_dir, text)
 
 ## Display all columns and dtypes
 ## Log checkpoint
-text = data.info(verbose=True)
+
+buffer = io.StringIO()
+data.info(buf=buffer)
+text = buffer.getvalue()
+
+# text = data.info(buf)
+print(text)
 bhUtils.loggerX(out_dir, text)
+
 ##print("-------------------")
 
 
@@ -142,7 +149,7 @@ data['DEPTHTO'] = data['DEPTHTO'].round(decimals=2)
 ## Export RAW data
 ################################
 ## Export data to csv
-bhUtils.exporter(out_dir, raw_bh_fname, data)
+bhUtils.exporter(out_dir, raw_bh_fname, data, enc)
 
 ## Log checkpoint
 text = "> Raw data exported!"
@@ -202,7 +209,7 @@ bhUtils.loggerX(out_dir, text)
 
 
 ################################
-## Convert DataFrame to GoeDataFrame
+## Convert DataFrame to GeoDataFrame
 ################################
 # ## Convert dataframe to geodataframe "gdf" and set inital crs to epsg:2056
 private_bh = bhUtils.makeGeospatial(data, 2056)
@@ -226,6 +233,8 @@ gc.collect()
 
 ## Load swiss boundary from shapefile
 ch_peri = gpd.read_file(source_ch_peri)
+text = ch_peri.crs
+bhUtils.loggerX(out_dir, text)
 
 ## Select only swiss perimeter
 ch_peri = ch_peri[ch_peri['ICC'] == 'CH']
@@ -261,7 +270,7 @@ bhUtils.loggerX(out_dir, text)
 ## Clip and reproject
 ################################
 ## Clip the data using GeoPandas clip
-private_bh = gpd.clip(private_bh, ch_peri)
+private_bh = private_bh.clip(ch_peri_buf)
 
 ## Log checkpoint
 text = "> Geodataframe clipped."
@@ -285,7 +294,7 @@ private_bh.columns = conf["export_pri_cols"]
 
 
 ## Export data to csv
-bhUtils.exporter(out_dir, private_bh_fname, private_bh)
+bhUtils.exporter(out_dir, private_bh_fname, private_bh, enc)
 
 ## Log checkpoint
 text = "> Private data exported!"
@@ -312,7 +321,7 @@ public_bh = private_bh
 ################################
 ## Delete dataframe and free memory
 ################################
-del(private_bh)
+del private_bh
 gc.collect()
 
 ## Check Columns
@@ -336,7 +345,9 @@ df_b = public_bh.loc[public_bh["RESTRICTIO"] == "b"].sort_values(by=["SHORTNAME"
 df_sum = df_g.shape[0] + df_b.shape[0] + df_f.shape[0]
 
 ## Log checkpoint
-text = "All unique data: ",public_bh.shape, "\n", "Restricted unique data: ", df_g.shape, "\n", "Restricted until unique data: ", df_b.shape, "\n", "Non-restricted unique data: ", df_f.shape, "\n", "Restricted + restircted until + Non-restricted data: ", df_sum, "\n", "Difference between all unique data and restriceted + Non-restricted: ", public_bh.shape[0] - df_sum
+text = "All unique data: ",public_bh.shape, "\n", "Restricted unique data: ", df_g.shape, "\n", "Restricted until unique data: ", \
+       df_b.shape, "\n", "Non-restricted unique data: ", df_f.shape, "\n", "Restricted + restircted until + Non-restricted data: ", \
+       df_sum, "\n", "Difference between all unique data and restriceted + Non-restricted: ", public_bh.shape[0] - df_sum
 bhUtils.loggerX(out_dir, text)
 
 ## delete duplicates in df_g
@@ -380,7 +391,7 @@ bhUtils.loggerX(out_dir, text)
 public_bh.columns = conf["export_pub_cols"]
 
 ## Export data to csv
-bhUtils.exporter(out_dir, public_bh_fname, public_bh)
+bhUtils.exporter(out_dir, public_bh_fname, public_bh, enc)
 
 ## Log checkpoint
 text = "> Public data exported!"
@@ -414,7 +425,9 @@ link_key = 'zoom_to='
 link_sep = ','
 
 # create Link
-bh_2d['link'] = baseURL + layer_key + layer_value + para_sep + layer_vis + layer_vis_value + para_sep + layer_trans + layer_trans_value + para_sep + link_key + bh_2d['x4326'].map(str) + link_sep + bh_2d['y4326'].map(str) + link_sep + '0'
+bh_2d['link'] = baseURL + layer_key + layer_value + para_sep + layer_vis + layer_vis_value + para_sep \
+                + layer_trans + layer_trans_value + para_sep + link_key + bh_2d['x4326'].map(str) \
+                + link_sep + bh_2d['y4326'].map(str) + link_sep + '0'
 
 ## Log checkpoint
 text = "Info 2D data", bh_2d.info(verbose=True)
@@ -427,7 +440,7 @@ bhUtils.loggerX(out_dir, text)
 public_bh.columns = conf["export_pub_cols"]
 
 ## Export data to csv
-bhUtils.exporter(out_dir, bh_2d_fname, bh_2d)
+bhUtils.exporter(out_dir, bh_2d_fname, bh_2d, enc)
 
 ## Log checkpoint
 text = "> 2D data exported!"
