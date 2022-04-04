@@ -1,0 +1,58 @@
+{
+  "bsp_key" : "bsp_value",
+  "root_path" : "/Users/oesterli/Documents/_temp/bhPrep/scr/",
+  "data_path" : "M:\\Appl\\DATA\\PROD\\lg\\06_FUE\\NGM\\02-NGM-PUB\\01-Datenintegration\\Bohrdaten\\bhPrep\\version211108\\data\\input\\bh",
+  "source_shp" : "Introduce path to shapefile.shp",
+  "source_csv" : "M:\\Appl\\DATA\\PROD\\lg\\06_FUE\\NGM\\02-NGM-PUB\\01-Datenintegration\\Bohrdaten\\bhPrep\\version211108\\data\\input\\bh",
+  "source_gpkg" : "Introduce path to geopackage.gpkg",
+  "file_ext" : "*.xlsx",
+  "file_encoding" : "utf-8",
+  "source_CH-perimeter" : "M:\\Appl\\DATA\\PROD\\lg\\06_FUE\\NGM\\02-NGM-PUB\\01-Datenintegration\\Bohrdaten\\bhPrep\\version211108\\data\\input\\helper\\swissBOUNDARIES3D_1_3_TLM_LANDESGEBIET_copy.shp",
+  "out_dir" : "M:\\Appl\\DATA\\PROD\\lg\\06_FUE\\NGM\\02-NGM-PUB\\01-Datenintegration\\Bohrdaten\\bhPrep\\version211108\\data\\output",
+  "attribute_path" : "M:\\Appl\\DATA\\PROD\\lg\\01_PRODUKTION\\Datenmodell\\13-Datenmodell_Bohrdaten\\swissforages\\Attribute_Attributwerte\\Atrributwerte_Geolcode.xlsx",
+  "raw_bh_fname" : "bh_raw",
+  "private_bh_fname" : "private_bh",
+  "public_bh_fname" : "public_bh",
+  "bh_2d_fname" : "bh_2D",
+  "sel_cols" : [
+    "index", "XCOORD","YCOORD","ZCOORDB","ORIGNAME","NAMEPUB",
+    "SHORTNAME", "BOHREDAT","BOHRTYP", "GRUND","RESTRICTIO",
+    "TIEFEMD","DEPTHFROM","DEPTHTO","LAYERDESC","ORIGGEOL","LITHOLOGY",
+    "LITHOSTRAT", "CHRONOSTR", "TECTO", "USCS1", "USCS2", "USCS3"
+    ],
+  "sel_cols_2" : [
+    "XCOORD", "YCOORD","ZCOORDB","ORIGNAME","NAMEPUB","SHORTNAME",
+    "BOHREDAT","GRUND","RESTRICTIO","TIEFEMD","DEPTHFROM","DEPTHTO",
+    "LAYERDESC"
+    ],
+  "export_pri_cols" : [
+    "bh_pri_index", "bh_pri_XCOORD","bh_pri_YCOORD","bh_pri_ZCOORDB", 
+    "bh_pri_ORIGNAME","bh_pri_NAMEPUB","bh_pri_SHORTNAME", 
+    "bh_pri_BOHREDAT","bh_pri_BOHRTYP", "bh_pri_GRUND","bh_pri_RESTRICTIO", 
+    "bh_pri_TIEFEMD","bh_pri_DEPTHFROM","bh_pri_DEPTHTO","bh_pri_LAYERDESC",
+    "bh_pri_ORIGGEOL","bh_pri_LITHOLOGY", "bh_pri_LITHOSTRAT", 
+    "bh_pri_CHRONOSTR", "bh_pri_TECTO", "bh_pri_USCS1", "bh_pri_USCS2", 
+    "bh_pri_USCS3","bh_pri_geom4326", "bh_pri_geom2056", "bh_pri_x4326",
+    "bh_pri_y4326"
+    ],
+  "export_pub_cols" : [
+    "bh_pub_index", "bh_pub_XCOORD","bh_pub_YCOORD","bh_pub_ZCOORDB",
+    "bh_pub_ORIGNAME","bh_pub_NAMEPUB","bh_pub_SHORTNAME", 
+    "bh_pub_BOHREDAT","bh_pub_BOHRTYP", "bh_pub_GRUND","bh_pub_RESTRICTIO",
+    "bh_pub_TIEFEMD","bh_pub_DEPTHFROM","bh_pub_DEPTHTO","bh_pub_LAYERDESC",
+    "bh_pub_ORIGGEOL","bh_pub_LITHOLOGY", "bh_pub_LITHOSTRAT", 
+    "bh_pub_CHRONOSTR", "bh_pub_TECTO", "bh_pub_USCS1", "bh_pub_USCS2", 
+    "bh_pub_USCS3","bh_pub_geom4326", "bh_pub_geom2056", "bh_pub_x4326",
+    "bh_pub_y4326"
+    ],
+  "cols_pub" : [
+    "index", "XCOORD", "YCOORD", "ZCOORDB", "ORIGNAME", "NAMEPUB","SHORTNAME",
+    "BOHREDAT", "BOHRTYP", "GRUND", "RESTRICTIO", "TIEFEMD", "DEPTHFROM", "DEPTHTO",
+    "LAYERDESC", "ORIGGEOL", "LITHOLOGY", "LITHOSTRAT", "CHRONOSTR", "TECTO",
+    "USCS1", "USCS2", "USCS3", "geom4326","geom2056", "x4326", "y4326"
+  ],
+  "cols_2D" : [
+    "index","XCOORD","YCOORD","x4326", "y4326", "ZCOORDB","ORIGNAME","NAMEPUB", 
+    "SHORTNAME", "BOHREDAT","BOHRTYP", "GRUND","RESTRICTIO","TIEFEMD"
+  ]
+}
