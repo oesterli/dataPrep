@@ -19,20 +19,22 @@ import pandas as pd
 ################################
 ## Load Configuration
 ################################
-with open(r"C:\Projects\bhPrep\scr\config.json",) as file:
+my_directory = r"C:\Projects\dataPrep"
+with open(os.path.join(my_directory, r"scr\bhPrep\config.json")) as file:
     conf = json.load(file)
 
 ## Specify variables
 now = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
-source_file = conf["source_csv"]
-data_folder = conf["data_path"]
+data_file = os.path.join(my_directory, conf["data_file_path"])
+print(data_file)
+data_folder = os.path.join(my_directory, conf["data_folder_path"])
 ext = conf["file_ext"]
 enc = conf["file_encoding"]
 
-source_ch_peri = conf["source_CH-perimeter"]
+source_ch_peri = os.path.join(my_directory, conf["source_CH_perimeter"])
 
-out_dir = conf["out_dir"]
+out_dir = os.path.join(my_directory, conf["out_dir"])
 sel_cols = conf["sel_cols"]
 
 raw_bh_fname = conf["raw_bh_fname"]
@@ -46,10 +48,10 @@ print("variables defined")
 ################################
 
 ## Load a single file
-#data = bhUtils.singleDataLoader(source_file)
+#data = bhUtils.singleDataLoader(data_file)
 
 ## Log checkpoint
-#text = "> SingleDataLoader: ", source_file, " loaded!"
+#text = "> SingleDataLoader: ", data_file, " loaded!"
 #bhUtils.loggerX(out_dir, text)
 ##print("-------------------")
 

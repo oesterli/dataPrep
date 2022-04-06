@@ -13,12 +13,13 @@ import pandas as pd
 
 ## Load Configuration
 ################################
-with open(r"C:\Projects\bhPrep\scr\config.json", ) as file:
+my_directory = r"C:\Projects\dataPrep"
+with open(os.path.join(my_directory, r"scr\bhPrep\config.json")) as file:
     conf = json.load(file)
 
-sourceData = "C:\\Projects\\bhPrep\\scr\\data\\input\\bh"
-sourceSearch = "C:\\Projects\\bhPrep\\scr\\data\\input"
-outDir = "C:\\Projects\\bhPrep\\scr\\data\\output"
+sourceData = os.path.join(my_directory, r"scr/bhHarmonization/data/input/sample")                # für richtige Daten: r"scr/bhPrep/data/output"
+sourceSearch = os.path.join(my_directory, r"scr/bhHarmonization/data/input")
+outDir = os.path.join(my_directory, r"scr/bhHarmonization/data/output")
 ext1 = "*.xlsx"
 ext2 = ".csv"
 enc = conf["file_encoding"]
