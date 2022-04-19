@@ -1,26 +1,16 @@
 .DS_Store
-/Users/oesterli/Documents/_temp/bhPrep/scr/data/input/bh/sf
-/Users/oesterli/Documents/_temp/bhPrep/work/
-/Users/oesterli/Documents/_temp/bhPrep/tools/
 
-/Users/oesterli/Documents/_temp/bhPrep/scr/data/input/bh/sampleBH.csv
-/Users/oesterli/Documents/_temp/bhPrep/scr/data/input/bh/sampleBH_2D.csv
-/Users/oesterli/Documents/_temp/bhPrep/tools/Create_sample_borholes.py
-/Users/oesterli/Documents/_temp/bhPrep/tools/my_snippets.ipynb
-
-dataPrep/scr/bhHarmonization/data/output/
-dataPrep/scr/bhHarmonization/data/input/
-dataPrep/scr/bhPrep/data/input/additionalData/
-dataPrep/scr/bhPrep/data/input/sample/
-dataPrep/scr/bhPrep/data/output/
-dataPrep/scr/swissforagePrep/data/
-dataPrep/.idea
-dataPrep/scr/xmlPrep/.idea
-dataPrep/scr/xmlPrep/__pycache__
-dataPrep/scr/xmlPrep/bash_repl.py
-dataPrep/scr/xmlPrep/GeolCode
-dataPrep/scr/xmlPrep/ReplaceList_UUID.xlsx
-dataPrep/scr/xmlPrep/ReplaceList.xlsx
-
+scr/bhHarmonization/data/
+scr/bhPrep/data/
+scr/swissforagePrep/data/
+.idea
+scr/xmlPrep/.idea
+scr/xmlPrep/__pycache__
+scr/bhPrep/.idea
+scr/bhPrep/__pycache__
+scr/xmlPrep/bash_repl.py
+scr/xmlPrep/GeolCode
+scr/xmlPrep/ReplaceList_UUID.xlsx
+scr/xmlPrep/ReplaceList.xlsx
 
 
