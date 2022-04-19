@@ -1,4 +1,18 @@
 .DS_Store
+<<<<<<< HEAD
+=======
+
+scr/bhHarmonization/data/
+scr/bhPrep/data/
+scr/swissforagePrep/data/
+.idea
+scr/xmlPrep/.idea
+scr/xmlPrep/__pycache__
+scr/xmlPrep/bash_repl.py
+scr/xmlPrep/GeolCode
+scr/xmlPrep/ReplaceList_UUID.xlsx
+scr/xmlPrep/ReplaceList.xlsx
+>>>>>>> d555e307101271f5658eb62722914bd722249f4b
 
 scr/bhHarmonization/data/
 scr/bhPrep/data/

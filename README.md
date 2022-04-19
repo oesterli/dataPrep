@@ -19,7 +19,7 @@ Der Ordner `bhPrep` beinhaltet folgende Scripts:
 `bhPrep` verwendet Bohrdaten aus GeoDIN, unterscheidet zwischen privaten, öffentlich zugänglichen und 2D Bohrdaten und speichert die Daten in csv-Tabelle mit den wichtigsten Informationen. Die einzelnen Schritte werden in einer log-Textdatei dokumentiert. 
 - **Imports** : Die nötigen Module werden importiert. 
 - **Load Configuration** : Definitionen der Variablen und dazugehörige Pfade
-- **Load data** : Daten werden gelesen via MultiDataLoader und in Tabelle umgewandelt mit Modul `panda`. Bei Dateiformaten wie .shp, .gpkg, .csv werden die Daten via SingleDataLoader als rawData ausgegeben. Dokumentation der geladenen Files im log-File im Ordner `output`. 
+- **Load data** : Daten werden gelesen via MultiDataLoader und in Tabelle umgewandelt mit Modul `pandas`. Bei Dateiformaten wie .shp, .gpkg, .csv werden die Daten via SingleDataLoader als rawData ausgegeben. Dokumentation der geladenen Files im log-File im Ordner `output`. 
 - **Display data** : Anzahl Zeilen (Indexnummern), Spalten, Infos über Datentypen und benötigter Speicherplatz werden gezählt und im Log-File protokolliert. 
 - **Statistics** : Berechnungen zur Anzahl Layers pro Bohrung, Dokumentation dazu im log-File im Ordner `output`. 
 - **Plot RAW data** : Diagramm der Anzahl Bohrungen pro Tiefenbereich und deren geographische Verteilung wird erstellt und als bh_raw_datum_uhrzeit.jpg gespeichert. Notiz dazu im log-File. 
