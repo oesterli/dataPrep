@@ -2,9 +2,7 @@
 
 scr/bhHarmonization/data/output/
 scr/bhHarmonization/data/input/
-scr/bhPrep/data/input/additionalData/
-scr/bhPrep/data/input/sample/
-scr/bhPrep/data/output/
+scr/bhPrep/data/
 scr/swissforagePrep/data/
 .idea
 scr/xmlPrep/.idea
@@ -13,6 +11,6 @@ scr/xmlPrep/bash_repl.py
 scr/xmlPrep/GeolCode
 scr/xmlPrep/ReplaceList_UUID.xlsx
 scr/xmlPrep/ReplaceList.xlsx
-scr/xmlPrep/test.txt
+scr/test.txt
 
 
