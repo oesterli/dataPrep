@@ -1,7 +1,6 @@
 .DS_Store
 
-scr/bhHarmonization/data/output/
-scr/bhHarmonization/data/input/
+scr/bhHarmonization/data/
 scr/bhPrep/data/
 scr/swissforagePrep/data/
 .idea
@@ -11,6 +10,6 @@ scr/xmlPrep/bash_repl.py
 scr/xmlPrep/GeolCode
 scr/xmlPrep/ReplaceList_UUID.xlsx
 scr/xmlPrep/ReplaceList.xlsx
-scr/test.txt
+
 
 
