@@ -15,6 +15,7 @@ import bhUtils
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
 
 ################################
 ## Load Configuration
@@ -175,7 +176,7 @@ dup_rows = data[data.duplicated(subset=cols)]
 text = "> Duplicate Rows except first occurrence based on all columns are :", dup_rows['LONGNAME'].count()
 bhUtils.loggerX(out_dir, text)
 
-#Show duplicate entries if exisiting
+#Show duplicate entries if existing
 if len(dup_rows) > 0:
     ## Log checkpoint
     text = "> Duplicate rows: "
@@ -404,13 +405,13 @@ bhUtils.loggerX(out_dir, text)
 ################################
 ## Process 2D data
 ################################
-## Reset columns names to orginal
+## Reset columns names to original
 public_bh.columns = conf["cols_pub"]
 
 # Drop all duplicated record based on unique-ID "SHORTNAME" apart from first record
 bh_2d = public_bh.drop_duplicates(subset=["SHORTNAME"], keep="first")
 
-# Select only relvant columns and save it back into "df_all_unique"
+# Select only relevant columns and save it back into "df_all_unique"
 bh_2d = bh_2d[conf["cols_2D"]]
 
 ## Create new Attribute for Link to swissgeol
@@ -430,6 +431,13 @@ link_sep = ','
 bh_2d['link'] = baseURL + layer_key + layer_value + para_sep + layer_vis + layer_vis_value + para_sep \
                 + layer_trans + layer_trans_value + para_sep + link_key + bh_2d['x4326'].map(str) \
                 + link_sep + bh_2d['y4326'].map(str) + link_sep + '0'
+
+## Create new attribute for differentiation solid/loose rocks
+# 8888 = top bedrock not reached / unknown
+# L = loose rock
+# S = solid rock
+bh_2d['rock_type'] = np.where(bh_2d['DEPTHTO'] < bh_2d['TOPBEDROCK'], 'L', 'S')
+
 
 ## Log checkpoint
 text = "Info 2D data", bh_2d.info(verbose=True)
