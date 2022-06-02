@@ -6,6 +6,8 @@ scr/swissforagePrep/data/
 .idea
 scr/xmlPrep/.idea
 scr/xmlPrep/__pycache__
+scr/bhPrep/.idea
+scr/bhPrep/__pycache__
 scr/xmlPrep/bash_repl.py
 scr/xmlPrep/GeolCode
 scr/xmlPrep/ReplaceList_UUID.xlsx
