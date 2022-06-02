@@ -37,20 +37,20 @@ df = pd.read_excel('ReplaceList_UUID.xlsx')
 # print(df)
 
 
-## Replace GeolCode: alphanumeric to numeric
-#############################################################
-df = df.set_index("GeolCode_alphanumeric")
-for code in root.findall('.//GeolCode'):
-    try:
-        code.text = str(df.loc[code.text].GeolCode_numeric)
-    except KeyError:
-        pass
-data.write('GeologyModelLookUp_V3.0_modified.xml')
+# ## Replace GeolCode: alphanumeric to numeric
+# #############################################################
+# df = df.set_index("GeolCode_alphanumeric")
+# for code in root.findall('.//GeolCode'):
+#     try:
+#         code.text = str(df.loc[code.text].GeolCode_numeric)
+#     except KeyError:
+#         pass
+# data.write('GeologyModelLookUp_V3.0_modified.xml')
 
 
 ## Replace TID: alphanumeric to UUID
 #############################################################
-data = lxml.parse('GeologyModelLookUp_V3.0_modified.xml')
+data = lxml.parse('220422_Daten_Basket002_TID1.xml')    #GeologyModelLookUp_V3.0_modified.xml
 root = data.getroot()
 
 GeolCode = root.findall('.//GeolCode')
@@ -64,21 +64,21 @@ for i in range(len(GeolCode)):
         parent.attrib['TID'] = df.loc[parent.attrib['TID']].UUID
     except KeyError:
         pass
-data.write('GeologyModelLookUp_V3.0_modified.xml')
+data.write('220422_Daten_Basket002_TIDcorrect.xml')
 
 
-## Replace REF: alphanumeric to UUID
-#############################################################
-data = et.parse('GeologyModelLookUp_V3_0.xml')
-root = data.getroot()
-for element in root.findall('.//Parent'):
-#    print('printing works')
-    print(element.attrib)
-    try:
-        element.attrib['REF'] = df.loc[element.attrib['REF']].UUID
-    except KeyError:
-        pass
-data.write('GeologyModelLookUp_V3.0_modified_b002_modified.xml')
+# ## Replace REF: alphanumeric to UUID
+# #############################################################
+# data = et.parse('GeologyModelLookUp_V3_0.xml')
+# root = data.getroot()
+# for element in root.findall('.//Parent'):
+# #    print('printing works')
+#     print(element.attrib)
+#     try:
+#         element.attrib['REF'] = df.loc[element.attrib['REF']].UUID
+#     except KeyError:
+#         pass
+# data.write('GeologyModelLookUp_V3.0_modified_b002_modified.xml')
 
 
 

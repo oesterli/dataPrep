@@ -416,7 +416,7 @@ bh_2d = bh_2d[conf["cols_2D"]]
 
 ## Create new Attribute for Link to swissgeol
 # Define parameters
-baseURL = 'https://swissgeol.ch/?'
+baseURL = 'https://viewer.swissgeol.ch/?'
 para_sep = '&'
 layer_key = 'layers='
 layer_value = 'boreholes'
