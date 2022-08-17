@@ -1,0 +1,295 @@
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|Current FME version: FME 2021.2.2.0 (20220106 - Build 21806 - WIN64)
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Desktop ESRI Edition (floating)
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|Permanent License.
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|Machine host name is: CM010707
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|Locale: de_CH
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|System Encoding: windows-1252
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\Projects\dataPrep\scr\bhPrep/'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'BH_2_CesiumTiles_wep_ama.fmw'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2021.2.2.0'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 10 64-bit  (Build 19042)
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Platform: WIN64
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|System Status: 265.44 GB of disk space available in the FME temporary folder (C:\Users\U80863~1\AppData\Local\Temp\wbrun_1654583133562_1004\fmetmp_e)
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|System Status: 15.81 GB of physical memory available
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|System Status: 63.24 GB of virtual memory available
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|START - ProcessID: 18820, peak process memory usage: 42092 kB, current process memory usage: 42092 kB
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `C:/Projects/dataPrep/scr/bhPrep\wb-xlate-1654589778499_1004' `LOG_STANDARDOUT' `YES' `LogCountServerName' `{f26a56b0-ef4e-495e-be3a-d43bc53a8778}'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\U80863546\AppData\Roaming\Safe Software\FME\'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;\\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\Formats
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\U80863546\AppData\Roaming\Safe Software\FME\Packages\21806-win64\transformers;C:\Program Files\FME\transformers;C:\Users\U80863546\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CoordinateSystems
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CoordinateSystemExceptions
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CoordinateSystemGridOverrides
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CsmapTransformationExceptions
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|Shared folders for transformer categories are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\TransformerCategories
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `C:\Projects\dataPrep\scr\bhPrep'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\U80863~1\AppData\Local\Temp\wbrun_1654583133562_1004\fmetmp_e', set from environment variable `FME_TEMP'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\U80863~1\AppData\Local\Temp'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 47.43 GB
+2022-06-07 10:16:23|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 35.57 GB
+2022-06-07 10:16:23|   0.1|  0.1|INFORM|Creating writer for format: 
+2022-06-07 10:16:23|   0.2|  0.1|INFORM|Creating reader for format: 
+2022-06-07 10:16:23|   0.2|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2022-06-07 10:16:23|   0.2|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2022-06-07 10:16:23|   0.2|  0.0|INFORM|Using MultiWriter with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2022-06-07 10:16:23|   0.2|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2022-06-07 10:16:23|   0.2|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2022-06-07 10:16:23|   0.2|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.2|  0.0|INFORM|Loaded module 'SolidBufferingFactory' from file 'C:\Program Files\FME\plugins/SolidBufferingFactory.dll'
+2022-06-07 10:16:23|   0.2|  0.0|INFORM|FME API version of module 'SolidBufferingFactory' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.3|  0.1|INFORM|Loaded module 'Geometry_func' from file 'C:\Program Files\FME\plugins/Geometry_func.dll'
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|FME API version of module 'Geometry_func' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|Loaded module 'GeometryValidationFactory' from file 'C:\Program Files\FME\plugins/GeometryValidationFactory.dll'
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|FME API version of module 'GeometryValidationFactory' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|FME API version of module 'SolidBufferingFactory' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|Loaded module 'GQueryFactory' from file 'C:\Program Files\FME\plugins/GQueryFactory.dll'
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|FME API version of module 'GQueryFactory' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|FME API version of module 'GeometryValidationFactory' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|Loaded module 'CSGFactory' from file 'C:\Program Files\FME\plugins/CSGFactory.dll'
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|FME API version of module 'CSGFactory' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|Loaded module 'NeighborColorSetterFactory' from file 'C:\Program Files\FME\plugins/NeighborColorSetterFactory.dll'
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|FME API version of module 'NeighborColorSetterFactory' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|FME API version of module 'GQueryFactory' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|FME API version of module 'GQueryFactory' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|Loaded module 'AttributeKeeperFactory' from file 'C:\Program Files\FME\plugins/AttributeKeeperFactory.dll'
+2022-06-07 10:16:23|   0.3|  0.0|INFORM|FME API version of module 'AttributeKeeperFactory' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.4|  0.1|INFORM|Loaded module 'SharedObjectFactory' from file 'C:\Program Files\FME\plugins/SharedObjectFactory.dll'
+2022-06-07 10:16:23|   0.4|  0.0|INFORM|FME API version of module 'SharedObjectFactory' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.4|  0.0|INFORM|FME API version of module 'GQueryFactory' matches current internal version (3.8 20210302)
+2022-06-07 10:16:23|   0.4|  0.0|INFORM|Emptying factory pipeline
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Unexpected Input Remover Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Export_XLSXR_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CSV_CSV2_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateSwapper (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateSwapper_OUTPUT Feature Counter -1 81 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |LineCombiner (ArcFactory): Computing maximal arcs defined by 0 input features
+2022-06-07 10:16:23|   0.4|  0.0|STATS |LineCombiner (ArcFactory): Created 0 linear feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |LineCombiner (ArcFactory): Reduced 0 input feature(s) to 0 output feature(s), for a reduction of 0%
+2022-06-07 10:16:23|   0.4|  0.0|STATS |LineCombiner_LINE Feature Counter -1 83 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |LineCombiner_<REJECTED> Feature Counter -1 2147680261 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateSwapper_2 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateSwapper_2_OUTPUT Feature Counter -1 30 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Bufferer (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Bufferer_BUFFERED Feature Counter -1 104 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Bufferer_<REJECTED> Feature Counter -1 2147680262 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |AttributeRemover_2 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |AttributeRemover_2_OUTPUT Feature Counter -1 105 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2_InputPassThrough (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2_InstanceTest (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2_RouterPrepper (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2_Router (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 POINT Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 LINE Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 ARC Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 AREA Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 ELLIPSE Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 TEXT Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 RASTER Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 POINTCLOUD Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 SURFACE Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 COLLECTION Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 NULL Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 INSTANCE Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2 <UNFILTERED> Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_2_SOLID Feature Counter -1 60 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryValidator_PASSED Feature Counter -1 47 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryValidator_REPAIRED Feature Counter -1 57 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryValidator_<REJECTED> Feature Counter -1 2147942438 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |AttributeCreator_11_OUTPUT Feature Counter -1 54 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |LengthCalculator_LengthCalculatorInput (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |LengthCalculator_LengthCalculator (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |LengthCalculator_Rejector (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |LengthCalculator_OUTPUT Feature Counter -1 164 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Chopper (ChoppingFactory): Processed 0 input feature(s), of which 0 feature(s) were chopped up into 0 piece(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Chopper_CHOPPED Feature Counter -1 166 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Chopper_<REJECTED> Feature Counter -1 2147745948 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateExtractor_TESTZDEFAULT (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateExtractor_TESTMODE (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateExtractor_LIST (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateExtractor_SPECIFIC (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateExtractor_SPECIFIC_2D_3D (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateExtractor_SPECIFIC_2D (ExecuteFunctionFactory): Executed FME Functions on 0 input feature(s) -- 0 feature(s) completed and 0 feature(s) rejected
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateExtractor_SPECIFIC_3D (ExecuteFunctionFactory): Executed FME Functions on 0 input feature(s) -- 0 feature(s) completed and 0 feature(s) rejected
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateExtractor_OUTPUT Feature Counter -1 168 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CoordinateExtractor_<REJECTED> Feature Counter -1 2147680421 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Sorter (SortFactory): Finished sorting a total of 0 features.
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Sorter_SORTED Feature Counter -1 170 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Tester_4 (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Tester_4_PASSED Feature Counter -1 172 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Bufferer_2 (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Bufferer_2_BUFFERED Feature Counter -1 179 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Bufferer_2_<REJECTED> Feature Counter -1 2147680427 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |3DForcer (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |3DForcer_Rejector (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |3DForcer_OUTPUT Feature Counter -1 180 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |3DForcer_<REJECTED> Feature Counter -1 2147680434 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Extruder (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Extruder_Rejector (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Extruder_EXTRUDED Feature Counter -1 228 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Extruder_<REJECTED> Feature Counter -1 2147680429 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_InputPassThrough (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_InstanceTest (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_RouterPrepper (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_Router (TestFactory): Tested 0 input feature(s) -- 0 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter POINT Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter LINE Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter ARC Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter AREA Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter ELLIPSE Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter TEXT Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter RASTER Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter POINTCLOUD Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter SURFACE Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter COLLECTION Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter NULL Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter INSTANCE Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter <UNFILTERED> Transformer Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryFilter_SOLID Feature Counter -1 59 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryCoercer_2_COERCED Feature Counter -1 46 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryValidator_3_PASSED Feature Counter -1 48 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryValidator_3_REPAIRED Feature Counter -1 49 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryValidator_3_<REJECTED> Feature Counter -1 2147942439 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |AttributeCreator_7 OUTPUT Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |AttributeCreator_7_OUTPUT_0_eW3hXzBg3Uo= Feature Counter -1 55 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |AttributeCreator_7_OUTPUT_1_XxImEnY5Tyw= Feature Counter -1 106 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryRemover (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |GeometryRemover_OUTPUT Feature Counter -1 51 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |FeatureMerger_4 (ReferenceFactory): Total Results: 0 Complete Feature(s), 0 Incomplete Feature(s), 0 Referenced Feature(s), 0 Unreferenced Feature(s), 0 Referencer Feature(s) (NO REFERENCES), 0 Referencee Feature(s) (NO Referencee fields defined), and 0 Duplicate Referencee Feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |FeatureMerger_4_MERGED Feature Counter -1 53 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |FeatureMerger_4_<REJECTED> Feature Counter -1 2147876906 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CSGBuilder_INTERSECTION Feature Counter -1 224 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |CSGBuilder_UNUSED Feature Counter -1 2147811355 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Restoring 2 feature(s) from FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_PipeReplacer -1 201 fo 0 OUTPUT  0  ac8a628cdd99a9a9dee42c0ae54ae2b0ca8f56b6.ffs'
+2022-06-07 10:16:23|   0.4|  0.0|STATS |Restoring 10890 feature(s) from FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger -1 68 fo 0 MERGED  0  994c6ee03d2dab96a08ae172b9746adc8d7ccb80.ffs'
+2022-06-07 10:16:24|   0.7|  0.3|INFORM|FeatureMerger_MERGED_-1_194_Player (RecorderFactory): Played back 10890 feature(s) from file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger -1 68 fo 0 MERGED  0  994c6ee03d2dab96a08ae172b9746adc8d7ccb80.ffs'
+2022-06-07 10:16:24|   0.7|  0.0|INFORM|PipeReplacer_OUTPUT_-1_222_Player (RecorderFactory): Played back 2 feature(s) from file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_PipeReplacer -1 201 fo 0 OUTPUT  0  ac8a628cdd99a9a9dee42c0ae54ae2b0ca8f56b6.ffs'
+2022-06-07 10:16:24|   0.7|  0.0|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger_3 -1 203 fo 0 MERGED  0  378e2adca122480ef1535175bc9e1334a44d6466.ffsupdating'
+2022-06-07 10:16:24|   0.7|  0.0|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger_3 -1 203 fo 2 USED_SUPPLIER  0  7a66164b8e381b77692c3cefa835aba6d2a5847e.ffsupdating'
+2022-06-07 10:16:24|   0.8|  0.1|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger_3 -1 203 fo 3 UNUSED_SUPPLIER  0  7248779cc9cd59f1ced21381aacaee1ec04c05b5.ffsupdating'
+2022-06-07 10:16:24|   1.3|  0.5|STATS |FeatureMerger_3 (ReferenceFactory): Total Results: 2 Complete Feature(s), 0 Incomplete Feature(s), 2 Referenced Feature(s), 10888 Unreferenced Feature(s), 0 Referencer Feature(s) (NO REFERENCES), 0 Referencee Feature(s) (NO Referencee fields defined), and 0 Duplicate Referencee Feature(s)
+2022-06-07 10:16:24|   1.3|  0.0|STATS |FeatureMerger_3_MERGED Feature Counter -1 225 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:24|   1.3|  0.0|STATS |FeatureMerger_3_UNMERGED_REQUESTOR Feature Counter -1 2147680459 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:24|   1.3|  0.0|STATS |FeatureMerger_3_USED_SUPPLIER Feature Counter -1 2147745995 (TeeFactory): Cloned 2 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:24|   1.3|  0.0|STATS |FeatureMerger_3_UNUSED_SUPPLIER Feature Counter -1 2147811531 (TeeFactory): Cloned 10888 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:24|   1.3|  0.0|STATS |FeatureMerger_3_<REJECTED> Feature Counter -1 2147877067 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:24|   1.3|  0.0|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureColorSetter -1 115 fo 0 COLORED  0  87fa9adf96c604c50b0120aebe457f8a1ffba8de.ffsupdating'
+2022-06-07 10:16:24|   1.3|  0.0|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_Counter_3 -1 116 fo 0 OUTPUT  0  25724fee40207b0774f714867bc1aa67eac1760a.ffsupdating'
+2022-06-07 10:16:24|   1.4|  0.1|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_CoordinateSystemSetter_2 -1 117 fo 0 OUTPUT  0  e6e6f0842b004820e66dd542e221e36073e930f2.ffsupdating'
+2022-06-07 10:16:24|   1.5|  0.1|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceRemover_2 -1 114 fo 0 OUTPUT  0  98664cad00648f813bd099570a6db0ea064ff95a.ffsupdating'
+2022-06-07 10:16:25|   1.5|  0.0|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_GeometryPropertySetter_2 -1 113 fo 0 SET  0  749150193c46f87eefc1de9f55dd3b767f1e8770.ffsupdating'
+2022-06-07 10:16:25|   1.5|  0.0|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_GeometryRemover_2 -1 110 fo 0 OUTPUT  0  bca575baf4e045c0182914f6b97f5c18a630cbce.ffsupdating'
+2022-06-07 10:16:25|   1.6|  0.1|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AttributeKeeper_2 -1 111 fo 0 OUTPUT  0  e234ea298b5ed7edd53286f4502055a95ba48d4c.ffsupdating'
+2022-06-07 10:16:25|   1.7|  0.1|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceStyler_2 -1 109 fo 0 OUTPUT  0  038401bb9b05f81482aa785b2b4f20a5dc13b59a.ffsupdating'
+2022-06-07 10:16:25|   1.7|  0.0|STATS |FeatureColorSetter_COLORED Feature Counter -1 125 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |FeatureColorSetter_<REJECTED> Feature Counter -1 2147680371 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |Counter_3_Rejector (ExecuteFunctionFactory): Executed FME Functions on 2 input feature(s) -- 2 feature(s) completed and 0 feature(s) rejected
+2022-06-07 10:16:25|   1.7|  0.0|STATS |Counter_3_OUTPUT Feature Counter -1 126 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |CoordinateSystemSetter_2 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |CoordinateSystemSetter_2 OUTPUT Splitter (TeeFactory): Cloned 2 input feature(s) into 4 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |CoordinateSystemSetter_2_OUTPUT_0_SawxK1MmQuc= Feature Counter -1 127 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |CoordinateSystemSetter_2_OUTPUT_1_UoWqbpNuPA0= Feature Counter -1 128 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |AppearanceRemover_2_OUTPUT Feature Counter -1 124 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |AppearanceRemover_2_UNMATCHED Feature Counter -1 2147680370 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |AppearanceRemover_2_<REJECTED> Feature Counter -1 2147745906 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |GeometryPropertySetter_2_Tester (TestFactory): Tested 2 input feature(s) -- 2 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:25|   1.7|  0.0|STATS |GeometryPropertySetter_2_Outputter (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |GeometryPropertySetter_2_SET Feature Counter -1 123 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |GeometryPropertySetter_2_UNTOUCHED Feature Counter -1 2147680369 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |GeometryRemover_2 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |GeometryRemover_2_OUTPUT Feature Counter -1 121 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |AttributeKeeper_2_OUTPUT Feature Counter -1 122 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |AppearanceStyler_2_GeometryFilter (TestFactory): Tested 2 input feature(s) -- 2 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:25|   1.7|  0.0|STATS |AppearanceStyler_2 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |AppearanceStyler_2_OUTPUT Feature Counter -1 120 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |AppearanceSetter_2_HOLDER (SortFactory): Output 0 feature(s) without doing any sorting
+2022-06-07 10:16:25|   1.7|  0.0|STATS |AppearanceSetter_2_ColorStyle_Creator (CreationFactory): Created 1 features
+2022-06-07 10:16:25|   1.7|  0.0|STATS |AppearanceSetter_2_Apply_ColorStyle (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2022-06-07 10:16:25|   1.7|  0.0|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceSetter_2 -1 112 fo 0 OUTPUT  0  aad151f49ac713df3cc4b3c3f59d5b5adacb311f.ffsupdating'
+2022-06-07 10:16:25|   1.7|  0.0|INFORM|FME Configuration: Using FME Reprojection Engine
+2022-06-07 10:16:25|   2.2|  0.5|INFORM|CS-MAP Reprojector: Transformation will be automatically selected for 'CH1903Plus_1.LV95/01' -> 'EPSG:4326', and is not guaranteed to remain the same in future releases of FME
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Reprojector: Using transformation `CH1903Plus_1_to_WGS84,Forward(Geocentric)' when reprojecting from CH1903Plus_1.LV95/01 to EPSG:4326
+2022-06-07 10:16:25|   2.2|  0.0|STATS |AppearanceSetter_2_uOriginOffsetRejector (TestFactory): Tested 2 input feature(s) -- 2 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:25|   2.2|  0.0|STATS |AppearanceSetter_2_vOriginOffsetRejector (TestFactory): Tested 2 input feature(s) -- 2 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:25|   2.2|  0.0|STATS |AppearanceSetter_2__textureuRepeatFactorRejector__ (TestFactory): Tested 2 input feature(s) -- 2 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:25|   2.2|  0.0|STATS |AppearanceSetter_2__texturevRepeatFactorRejector__ (TestFactory): Tested 2 input feature(s) -- 2 feature(s) passed and 0 feature(s) failed
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Stored 2 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger_3 -1 203 fo 2 USED_SUPPLIER  0  7a66164b8e381b77692c3cefa835aba6d2a5847e.ffsupdating'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger_3 -1 203 fo 2 USED_SUPPLIER  0  7a66164b8e381b77692c3cefa835aba6d2a5847e.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger_3 -1 203 fo 2 USED_SUPPLIER  0  7a66164b8e381b77692c3cefa835aba6d2a5847e.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Stored 2 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger_3 -1 203 fo 0 MERGED  0  378e2adca122480ef1535175bc9e1334a44d6466.ffsupdating'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger_3 -1 203 fo 0 MERGED  0  378e2adca122480ef1535175bc9e1334a44d6466.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger_3 -1 203 fo 0 MERGED  0  378e2adca122480ef1535175bc9e1334a44d6466.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Stored 2 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureColorSetter -1 115 fo 0 COLORED  0  87fa9adf96c604c50b0120aebe457f8a1ffba8de.ffsupdating'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureColorSetter -1 115 fo 0 COLORED  0  87fa9adf96c604c50b0120aebe457f8a1ffba8de.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureColorSetter -1 115 fo 0 COLORED  0  87fa9adf96c604c50b0120aebe457f8a1ffba8de.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Stored 10888 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger_3 -1 203 fo 3 UNUSED_SUPPLIER  0  7248779cc9cd59f1ced21381aacaee1ec04c05b5.ffsupdating'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger_3 -1 203 fo 3 UNUSED_SUPPLIER  0  7248779cc9cd59f1ced21381aacaee1ec04c05b5.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_FeatureMerger_3 -1 203 fo 3 UNUSED_SUPPLIER  0  7248779cc9cd59f1ced21381aacaee1ec04c05b5.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Stored 2 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_GeometryPropertySetter_2 -1 113 fo 0 SET  0  749150193c46f87eefc1de9f55dd3b767f1e8770.ffsupdating'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_GeometryPropertySetter_2 -1 113 fo 0 SET  0  749150193c46f87eefc1de9f55dd3b767f1e8770.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_GeometryPropertySetter_2 -1 113 fo 0 SET  0  749150193c46f87eefc1de9f55dd3b767f1e8770.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Stored 2 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_Counter_3 -1 116 fo 0 OUTPUT  0  25724fee40207b0774f714867bc1aa67eac1760a.ffsupdating'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_Counter_3 -1 116 fo 0 OUTPUT  0  25724fee40207b0774f714867bc1aa67eac1760a.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_Counter_3 -1 116 fo 0 OUTPUT  0  25724fee40207b0774f714867bc1aa67eac1760a.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Stored 2 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_CoordinateSystemSetter_2 -1 117 fo 0 OUTPUT  0  e6e6f0842b004820e66dd542e221e36073e930f2.ffsupdating'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_CoordinateSystemSetter_2 -1 117 fo 0 OUTPUT  0  e6e6f0842b004820e66dd542e221e36073e930f2.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_CoordinateSystemSetter_2 -1 117 fo 0 OUTPUT  0  e6e6f0842b004820e66dd542e221e36073e930f2.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Stored 2 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceRemover_2 -1 114 fo 0 OUTPUT  0  98664cad00648f813bd099570a6db0ea064ff95a.ffsupdating'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceRemover_2 -1 114 fo 0 OUTPUT  0  98664cad00648f813bd099570a6db0ea064ff95a.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceRemover_2 -1 114 fo 0 OUTPUT  0  98664cad00648f813bd099570a6db0ea064ff95a.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Stored 2 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_GeometryRemover_2 -1 110 fo 0 OUTPUT  0  bca575baf4e045c0182914f6b97f5c18a630cbce.ffsupdating'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_GeometryRemover_2 -1 110 fo 0 OUTPUT  0  bca575baf4e045c0182914f6b97f5c18a630cbce.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_GeometryRemover_2 -1 110 fo 0 OUTPUT  0  bca575baf4e045c0182914f6b97f5c18a630cbce.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Stored 2 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AttributeKeeper_2 -1 111 fo 0 OUTPUT  0  e234ea298b5ed7edd53286f4502055a95ba48d4c.ffsupdating'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AttributeKeeper_2 -1 111 fo 0 OUTPUT  0  e234ea298b5ed7edd53286f4502055a95ba48d4c.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AttributeKeeper_2 -1 111 fo 0 OUTPUT  0  e234ea298b5ed7edd53286f4502055a95ba48d4c.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Stored 2 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceStyler_2 -1 109 fo 0 OUTPUT  0  038401bb9b05f81482aa785b2b4f20a5dc13b59a.ffsupdating'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceStyler_2 -1 109 fo 0 OUTPUT  0  038401bb9b05f81482aa785b2b4f20a5dc13b59a.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceStyler_2 -1 109 fo 0 OUTPUT  0  038401bb9b05f81482aa785b2b4f20a5dc13b59a.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Stored 2 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceSetter_2 -1 112 fo 0 OUTPUT  0  aad151f49ac713df3cc4b3c3f59d5b5adacb311f.ffsupdating'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceSetter_2 -1 112 fo 0 OUTPUT  0  aad151f49ac713df3cc4b3c3f59d5b5adacb311f.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceSetter_2 -1 112 fo 0 OUTPUT  0  aad151f49ac713df3cc4b3c3f59d5b5adacb311f.fsi'
+2022-06-07 10:16:25|   2.2|  0.0|STATS |AppearanceSetter_2_OUTPUT Feature Counter -1 183 (TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2022-06-07 10:16:25|   2.2|  0.0|STATS |AppearanceSetter_2_HOLDER Feature Counter -1 2147680368 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:25|   2.2|  0.0|STATS |AppearanceSetter_2_UNMATCHED Feature Counter -1 2147745904 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:25|   2.2|  0.0|STATS |AppearanceSetter_2_<REJECTED> Feature Counter -1 2147811440 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Destination Feature Type Routing Correlator (RoutingFactory): Tested 2 input feature(s), wrote 2 output feature(s): 0 matched merge filters, 2 were routed to output, 0 could not be routed.
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Final Output Nuker (TeeFactory): Cloned 2 input feature(s) into 0 output feature(s)
+2022-06-07 10:16:25|   2.2|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 10:16:25|   2.2|  0.0|STATS |                            `Count' Domain Summary
+2022-06-07 10:16:25|   2.2|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Counter_3_counter                                                            2
+2022-06-07 10:16:25|   2.2|  0.0|STATS |==============================================================================
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Total `@Count' Invocations:                                                  2
+2022-06-07 10:16:25|   2.2|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 10:16:25|   2.2|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 10:16:25|   2.2|  0.0|STATS |                            Features Read Summary
+2022-06-07 10:16:25|   2.2|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 10:16:25|   2.2|  0.0|STATS |==============================================================================
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Total Features Read                                                          0
+2022-06-07 10:16:25|   2.2|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 10:16:25|   2.2|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 10:16:25|   2.2|  0.0|STATS |                           Features Written Summary
+2022-06-07 10:16:25|   2.2|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 10:16:25|   2.2|  0.0|STATS |==============================================================================
+2022-06-07 10:16:25|   2.2|  0.0|STATS |Total Features Written                                                       0
+2022-06-07 10:16:25|   2.2|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 10:16:25|   2.2|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2022-06-07 10:16:25|   2.2|  0.0|WARN  |-~                                                                             ~-
+2022-06-07 10:16:25|   2.2|  0.0|WARN  |-~    Feature caches have been recorded at every stage of the translation.     ~-
+2022-06-07 10:16:25|   2.2|  0.0|WARN  |-~                      To inspect the recorded features,                      ~-
+2022-06-07 10:16:26|   2.3|  0.1|WARN  |-~              click the feature cache icons next to the ports.               ~-
+2022-06-07 10:16:26|   2.3|  0.0|WARN  |-~                                                                             ~-
+2022-06-07 10:16:26|   2.3|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2022-06-07 10:16:26|   2.3|  0.0|INFORM|Translation was SUCCESSFUL with 7 warning(s) (0 feature(s) output)
+2022-06-07 10:16:26|   2.3|  0.0|INFORM|FME Session Duration: 2.9 seconds. (CPU: 1.6s user, 0.7s system)
+2022-06-07 10:16:26|   2.3|  0.0|INFORM|END - ProcessID: 18820, peak process memory usage: 123512 kB, current process memory usage: 104860 kB
