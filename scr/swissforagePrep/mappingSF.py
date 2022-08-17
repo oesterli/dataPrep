@@ -40,7 +40,7 @@ df = df.rename(columns={'Koordinate E': 'XCOORD', 'Koordinate N': 'YCOORD', 'Ans
                                 'depth_to': 'DEPTHTO', 'description': 'LAYERDESC', 'geology': 'ORIGGEOL',
                                 'lithology': 'LITHOLOGY', 'lithostratigraphy': 'LITHOSTRAT',
                                 'chronostratigraphy': 'CHRONOSTR','tectonic_unit': 'TECTO',
-                                'uscs_1': 'USCS1', 'uscs_2': 'USCS1', 'uscs_3': 'USCS3'})
+                                'uscs_1': 'USCS1', 'uscs_2': 'USCS2', 'uscs_3': 'USCS3'})
 
 
 ## Rename content
