@@ -69,10 +69,10 @@ bhUtils.loggerX(out_dir, text)
 ################################
 ## Display data
 ################################
-## Display all columns
+## Display all columns or print first 5 rows from the top
 #pd.set_option('display.max_columns', None)
 #pd.set_option('display.max_rows', None)
-#display(data.head(5))
+#print(data.head(5))
 
 ## Display all columns and dtypes
 ## Log checkpoint
@@ -82,7 +82,7 @@ data.info(buf=buffer)
 text = buffer.getvalue()
 
 # text = data.info(buf)
-print(text)
+# print(text)
 bhUtils.loggerX(out_dir, text)
 
 ##print("-------------------")
@@ -138,6 +138,7 @@ data = data.sort_values(by=["SHORTNAME", "DEPTHFROM"])
 
 ## Create an index column
 data['index'] = data.index
+
 
 ## Round data
 data['XCOORD'] = data['XCOORD'].round(decimals=2)
