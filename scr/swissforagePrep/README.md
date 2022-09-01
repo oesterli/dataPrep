@@ -3,5 +3,4 @@ Der Datenexport aus swissforage wird zum Excel-Format umgewandelt. Dabei wird di
 
 ---
 
-## swissforagePrep
 The data export from swissforage is converted to Excel format. The number of columns is reduced according to the structure of the GeoDIN export. Values encoded with GeolCodes and deviating column names are renamed. 
