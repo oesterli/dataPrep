@@ -1,0 +1,71 @@
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Current FME version: FME 2021.2.2.0 (20220106 - Build 21806 - WIN64)
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Desktop ESRI Edition (floating)
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Permanent License.
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Machine host name is: CM010707
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Locale: de_CH
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|System Encoding: windows-1252
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\Projects\dataPrep\scr\bhPrep/'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'BH_2_CesiumTiles_070622_pipereplacer_ama.fmw'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2021.2.2.0'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 10 64-bit  (Build 19042)
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Platform: WIN64
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|System Status: 268.85 GB of disk space available in the FME temporary folder (C:\Users\U80863~1\AppData\Local\Temp\wbrun_1659942213032_11336\fmetmp_9)
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|System Status: 15.81 GB of physical memory available
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|System Status: 63.24 GB of virtual memory available
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|START - ProcessID: 13672, peak process memory usage: 42600 kB, current process memory usage: 42600 kB
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `C:/Projects/dataPrep/scr/bhPrep\wb-xlate-1659944479631_11336' `LOG_STANDARDOUT' `YES' `LogCountServerName' `{18937db9-92bf-471e-ad22-fd663f8a2a59}'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\U80863546\AppData\Roaming\Safe Software\FME\'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;\\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\Formats
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\U80863546\AppData\Roaming\Safe Software\FME\Packages\21806-win64\transformers;C:\Program Files\FME\transformers;C:\Users\U80863546\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CoordinateSystems
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CoordinateSystemExceptions
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CoordinateSystemGridOverrides
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CsmapTransformationExceptions
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Shared folders for transformer categories are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\TransformerCategories
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `C:\Projects\dataPrep\scr\bhPrep'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\U80863~1\AppData\Local\Temp\wbrun_1659942213032_11336\fmetmp_9', set from environment variable `FME_TEMP'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\U80863~1\AppData\Local\Temp'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 47.43 GB
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 35.57 GB
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Creating writer for format: 
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Creating reader for format: 
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Using MultiWriter with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2022-08-08 09:41:21|   0.0|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.8 20210302)
+2022-08-08 09:41:21|   0.1|  0.1|INFORM|Loaded module 'PythonFactory' from file 'C:\Program Files\FME\plugins/PythonFactory.dll'
+2022-08-08 09:41:21|   0.1|  0.0|INFORM|FME API version of module 'PythonFactory' matches current internal version (3.8 20210302)
+2022-08-08 09:41:21|   0.1|  0.0|INFORM|The workspace does not contain user Python. FME will attempt to use a Python 3.8+ interpreter
+2022-08-08 09:41:21|   0.1|  0.0|INFORM|Using Python interpreter from `C:\Program Files\FME\fmepython38\python38.dll' with PYTHONHOME `C:\Program Files\FME\fmepython38'
+2022-08-08 09:41:21|   0.1|  0.0|INFORM|Python version 3.8 loaded successfully
+2022-08-08 09:41:21|   0.2|  0.1|INFORM|Loaded module 'ReinterpretRaster_func' from file 'C:\Program Files\FME\plugins/ReinterpretRaster_func.dll'
+2022-08-08 09:41:21|   0.2|  0.0|INFORM|FME API version of module 'ReinterpretRaster_func' matches current internal version (3.8 20210302)
+2022-08-08 09:41:21|   0.2|  0.0|INFORM|Emptying factory pipeline
+2022-08-08 09:41:21|   0.2|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
+2022-08-08 09:41:21|   0.2|  0.0|STATS |Unexpected Input Remover Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-08-08 09:41:21|   0.2|  0.0|STATS |CSV_CSV2_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-08-08 09:41:21|   0.2|  0.0|STATS |test_rheinau_XLSXR_2 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-08-08 09:41:21|   0.2|  0.0|STATS |Export_XLSXR_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-08-08 09:41:21|   0.2|  0.0|STATS |Sheet1_XLSXR_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-08-08 09:41:21|   0.2|  0.0|STATS |Restoring 1 feature(s) from FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_070622_piperepl-VYjmFp\Main_DuplicateFilter -1 103 fo 0 UNIQUE  0  7732a06ab2eec0f594c762e3189c38da04d5f028.ffs'
+2022-08-08 09:41:21|   0.2|  0.0|INFORM|ChartGenerator (PythonFactory): Splitting bulk features into individual features
+2022-08-08 09:41:23|   1.5|  1.3|INFORM|DuplicateFilter_UNIQUE_-1_131_Player (RecorderFactory): Played back 459 feature(s) from file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_070622_piperepl-VYjmFp\Main_DuplicateFilter -1 103 fo 0 UNIQUE  0  7732a06ab2eec0f594c762e3189c38da04d5f028.ffs'
+2022-08-08 09:41:23|   1.5|  0.0|STATS |f_7 (TeeFactory): Cloned 459 input feature(s) into 459 output feature(s)
+2022-08-08 09:41:23|   1.5|  0.0|ERROR |ChartGenerator: Non-numeric input provided.  Please validate that the values of the "Data Attribute" are numeric.  To chart the counts of non-numeric input in "Pie" or "Bar" mode, leave the "Data Label Attribute" parameter unset, see documentation for further details
+2022-08-08 09:41:23|   1.5|  0.0|FATAL |ChartGenerator (PythonFactory): PythonFactory failed to process group properly
+2022-08-08 09:41:23|   1.5|  0.0|ERROR |ChartGenerator (PythonFactory): A fatal error has occurred. Check the logfile above for details
+2022-08-08 09:41:23|   1.5|  0.0|ERROR |A fatal error has occurred. Check the logfile above for details
+2022-08-08 09:41:23|   1.5|  0.0|INFORM|Translation FAILED with 4 error(s) and 0 warning(s) (0 feature(s) output)
+2022-08-08 09:41:23|   1.5|  0.0|INFORM|FME Session Duration: 1.8 seconds. (CPU: 1.2s user, 0.3s system)
+2022-08-08 09:41:23|   1.5|  0.0|INFORM|END - ProcessID: 13672, peak process memory usage: 357704 kB, current process memory usage: 357704 kB

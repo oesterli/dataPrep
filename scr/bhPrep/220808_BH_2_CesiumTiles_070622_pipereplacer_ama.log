@@ -1,0 +1,151 @@
+2022-08-17 11:56:50|   0.0|  0.0|INFORM|Current FME version: FME 2021.2.2.0 (20220106 - Build 21806 - WIN64)
+2022-08-17 11:56:50|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Desktop ESRI Edition (floating)
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|Permanent License.
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|Machine host name is: CM010707
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|Locale: de_CH
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|System Encoding: windows-1252
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\Projects\dataPrep\scr\bhPrep/'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is '220808_BH_2_CesiumTiles_070622_pipereplacer_ama.fmw'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2021.2.2.0'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 10 64-bit  (Build 19042)
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Platform: WIN64
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|System Status: 265.65 GB of disk space available in the FME temporary folder (C:\Users\U80863~1\AppData\Local\Temp\wbrun_1660719398132_612\fmetmp_23)
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|System Status: 15.81 GB of physical memory available
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|System Status: 63.24 GB of virtual memory available
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|START - ProcessID: 12684, peak process memory usage: 41836 kB, current process memory usage: 41836 kB
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `C:/Projects/dataPrep/scr/bhPrep\wb-xlate-1660730208454_612' `LOG_STANDARDOUT' `YES' `LogCountServerName' `{3c8524a6-768d-4147-8ab9-1aaa91f0252c}'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\U80863546\AppData\Roaming\Safe Software\FME\'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;\\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\Formats
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\U80863546\AppData\Roaming\Safe Software\FME\Packages\21806-win64\transformers;C:\Program Files\FME\transformers;C:\Users\U80863546\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CoordinateSystems
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CoordinateSystemExceptions
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CoordinateSystemGridOverrides
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CsmapTransformationExceptions
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|Shared folders for transformer categories are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\TransformerCategories
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `C:\Projects\dataPrep\scr\bhPrep'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\U80863~1\AppData\Local\Temp\wbrun_1660719398132_612\fmetmp_23', set from environment variable `FME_TEMP'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\U80863~1\AppData\Local\Temp'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 47.43 GB
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 35.57 GB
+2022-08-17 11:56:51|   0.0|  0.0|INFORM|Creating writer for format: 
+2022-08-17 11:56:51|   0.1|  0.1|INFORM|Creating reader for format: 
+2022-08-17 11:56:51|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2022-08-17 11:56:51|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding XLSXR Reader with keyword XLSXR_1
+2022-08-17 11:56:51|   0.1|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2022-08-17 11:56:51|   0.1|  0.0|INFORM|Creating reader for format: Microsoft Excel
+2022-08-17 11:56:51|   0.2|  0.1|INFORM|Trying to find a DYNAMIC plugin for reader named `XLSXR'
+2022-08-17 11:56:51|   0.2|  0.0|INFORM|Loaded module 'XLSXR' from file 'C:\Program Files\FME\plugins/xlsx.dll'
+2022-08-17 11:56:51|   0.2|  0.0|INFORM|FME API version of module 'XLSXR' matches current internal version (3.8 20210302)
+2022-08-17 11:56:51|   0.2|  0.0|INFORM|XLSXR reader: Creating bulk features from individual features
+2022-08-17 11:56:51|   0.2|  0.0|INFORM|Using MultiWriter with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2022-08-17 11:56:51|   0.2|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2022-08-17 11:56:51|   0.2|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2022-08-17 11:56:51|   0.2|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.8 20210302)
+2022-08-17 11:56:51|   0.2|  0.0|INFORM|Excel Reader: Output cell formulas: 'false'
+2022-08-17 11:56:51|   0.2|  0.0|INFORM|Excel Reader: Output cell formatting: 'false'
+2022-08-17 11:56:51|   0.2|  0.0|INFORM|Excel Reader: Output cell comments: 'false'
+2022-08-17 11:56:51|   0.2|  0.0|INFORM|Excel Reader: Force full datetime values: 'false'
+2022-08-17 11:56:51|   0.2|  0.0|INFORM|Excel Reader: Opening dataset 'M:\Appl\DATA\PROD\lg\06_FUE\NGM\02-NGM-PUB\01-Datenintegration\Bohrdaten\dataPrep\scr\bhPrep\data\input\SF_mapped_2021-12-23_11-45-41.xlsx'...
+2022-08-17 11:56:52|   1.2|  1.0|INFORM|Excel Reader: Reading images embedded in workbook 'SF_mapped_2021-12-23_11-45-41.xlsx' for selected sheets as 'None'
+2022-08-17 11:56:52|   1.2|  0.0|INFORM|Excel Reader: Trimming whitespace from attribute names
+2022-08-17 11:56:52|   1.2|  0.0|INFORM|Excel Reader: Trimming the following characters from attribute names: ''
+2022-08-17 11:56:52|   1.2|  0.0|INFORM|Excel Reader: Reading sheet 'Sheet1'...
+2022-08-17 11:56:52|   1.2|  0.0|INFORM|Excel Reader: Sheet 'Sheet1' range: Start Row '2', Start Column 'A', End Row '8232', End Column 'CB'
+2022-08-17 11:56:52|   1.2|  0.0|STATS |Storing feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9.ffsupdating'
+2022-08-17 11:56:52|   1.2|  0.0|INFORM|FFS writer: Writing 2 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9.fts'
+2022-08-17 11:56:52|   1.2|  0.0|INFORM|Spatial Index: Adding 2 features
+2022-08-17 11:56:52|   1.2|  0.0|INFORM|FFS writer: Writing 21 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_1.fts'
+2022-08-17 11:56:52|   1.2|  0.0|INFORM|Spatial Index: Adding 21 features
+2022-08-17 11:56:52|   1.2|  0.0|INFORM|FFS writer: Writing 13 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_2.fts'
+2022-08-17 11:56:52|   1.2|  0.0|INFORM|Spatial Index: Adding 13 features
+2022-08-17 11:56:52|   1.3|  0.1|WARN  |Excel Reader: Invalid value '' for parameter 'ZCOORDB'.  Values should be numeric
+2022-08-17 11:56:52|   1.3|  0.0|WARN  |... Last line repeated 8 times ...
+2022-08-17 11:56:52|   1.3|  0.0|WARN  |Logging limit reached for the preceding message. Further instances of this message will not be logged
+2022-08-17 11:56:53|   1.4|  0.1|INFORM|FFS writer: Writing 1681 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_3.fts'
+2022-08-17 11:56:53|   1.4|  0.0|INFORM|Spatial Index: Adding 1681 features
+2022-08-17 11:56:53|   1.6|  0.2|INFORM|FFS writer: Writing 1018 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_4.fts'
+2022-08-17 11:56:53|   1.6|  0.0|INFORM|Spatial Index: Adding 1018 features
+2022-08-17 11:56:53|   1.7|  0.1|INFORM|FFS writer: Writing 527 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_5.fts'
+2022-08-17 11:56:53|   1.7|  0.0|INFORM|Spatial Index: Adding 527 features
+2022-08-17 11:56:53|   1.8|  0.1|INFORM|FFS writer: Writing 553 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_6.fts'
+2022-08-17 11:56:53|   1.8|  0.0|INFORM|Spatial Index: Adding 553 features
+2022-08-17 11:56:53|   1.8|  0.0|INFORM|FFS writer: Writing 8 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_7.fts'
+2022-08-17 11:56:53|   1.8|  0.0|INFORM|Spatial Index: Adding 8 features
+2022-08-17 11:56:53|   1.8|  0.0|INFORM|FFS writer: Writing 2 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_8.fts'
+2022-08-17 11:56:53|   1.8|  0.0|INFORM|Spatial Index: Adding 2 features
+2022-08-17 11:56:53|   1.8|  0.0|INFORM|FFS writer: Writing 26 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_9.fts'
+2022-08-17 11:56:53|   1.8|  0.0|INFORM|Spatial Index: Adding 26 features
+2022-08-17 11:56:53|   1.9|  0.1|INFORM|FFS writer: Writing 41 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_10.fts'
+2022-08-17 11:56:53|   1.9|  0.0|INFORM|Spatial Index: Adding 41 features
+2022-08-17 11:56:53|   2.0|  0.1|INFORM|FFS writer: Writing 45 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_11.fts'
+2022-08-17 11:56:53|   2.0|  0.0|INFORM|Spatial Index: Adding 45 features
+2022-08-17 11:56:53|   2.0|  0.0|INFORM|FFS writer: Writing 120 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_12.fts'
+2022-08-17 11:56:53|   2.0|  0.0|INFORM|Spatial Index: Adding 120 features
+2022-08-17 11:56:53|   2.0|  0.0|INFORM|FFS writer: Writing 4 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_13.fts'
+2022-08-17 11:56:53|   2.0|  0.0|INFORM|Spatial Index: Adding 4 features
+2022-08-17 11:56:53|   2.0|  0.0|INFORM|FFS writer: Writing 9 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_14.fts'
+2022-08-17 11:56:53|   2.0|  0.0|INFORM|Spatial Index: Adding 9 features
+2022-08-17 11:56:53|   2.1|  0.1|INFORM|FFS writer: Writing 714 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_15.fts'
+2022-08-17 11:56:53|   2.1|  0.0|INFORM|Spatial Index: Adding 714 features
+2022-08-17 11:56:54|   2.4|  0.3|INFORM|FFS writer: Writing 1423 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_16.fts'
+2022-08-17 11:56:54|   2.4|  0.0|INFORM|Spatial Index: Adding 1423 features
+2022-08-17 11:56:54|   2.7|  0.3|INFORM|FFS writer: Writing 2024 feature(s) to file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9_17.fts'
+2022-08-17 11:56:54|   2.7|  0.0|INFORM|Spatial Index: Adding 2024 features
+2022-08-17 11:56:54|   2.8|  0.1|INFORM|Excel Reader: Closing dataset 'M:\Appl\DATA\PROD\lg\06_FUE\NGM\02-NGM-PUB\01-Datenintegration\Bohrdaten\dataPrep\scr\bhPrep\data\input\SF_mapped_2021-12-23_11-45-41.xlsx'...
+2022-08-17 11:56:54|   2.8|  0.0|INFORM|Styles created: 3
+2022-08-17 11:56:54|   2.9|  0.1|INFORM|Excel Reader: Closing dataset 'M:\Appl\DATA\PROD\lg\06_FUE\NGM\02-NGM-PUB\01-Datenintegration\Bohrdaten\dataPrep\scr\bhPrep\data\input\SF_mapped_2021-12-23_11-45-41.xlsx'...
+2022-08-17 11:56:54|   2.9|  0.0|INFORM|MULTI_READER(MULTI_READER): Done reading 8231 features from 1 readers
+2022-08-17 11:56:54|   2.9|  0.0|INFORM|Emptying factory pipeline
+2022-08-17 11:56:54|   2.9|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 8231 input feature(s), wrote 8231 output feature(s): 8231 matched merge filters, 8231 were routed to output, 0 could not be routed.
+2022-08-17 11:56:54|   2.9|  0.0|STATS |Unexpected Input Remover Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-08-17 11:56:54|   2.9|  0.0|STATS |CSV_CSV2_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-08-17 11:56:54|   2.9|  0.0|STATS |Stored 18 feature(s) to FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9.ffsupdating'
+2022-08-17 11:56:54|   2.9|  0.0|INFORM|Saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9.fsi'
+2022-08-17 11:56:54|   2.9|  0.0|INFORM|Finished saving spatial index into file 'C:\Users\U80863~1\AppData\Local\Temp\wb-cache-220808_BH_2_CesiumTiles_070622_p-pwgOqf\Main_Sheet1 -1 135 -1  0  078b84791b67c198799e1e2d49e51e80394104a9.fsi'
+2022-08-17 11:56:54|   2.9|  0.0|STATS |Sheet1_XLSXR_1 Splitter (TeeFactory): Cloned 8231 input feature(s) into 8231 output feature(s)
+2022-08-17 11:56:54|   2.9|  0.0|STATS |Sheet1_XLSXR_1 Feature Counter -1 141 (TeeFactory): Cloned 8231 input feature(s) into 8231 output feature(s)
+2022-08-17 11:56:54|   2.9|  0.0|STATS |test_rheinau_XLSXR_2 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-08-17 11:56:54|   2.9|  0.0|STATS |Export_XLSXR_3 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-08-17 11:56:54|   2.9|  0.0|STATS |Destination Feature Type Routing Correlator (RoutingFactory): Tested 8231 input feature(s), wrote 8231 output feature(s): 0 matched merge filters, 0 were routed to output, 8231 could not be routed.
+2022-08-17 11:56:54|   2.9|  0.0|STATS |Final Output Nuker (TeeFactory): Cloned 8231 input feature(s) into 0 output feature(s)
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |      Features not written - verify feature type fanout/dynamic settings
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |  (Check that fanout/dynamic feature type attribute exists and has a value)
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |                                                                          8231
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |==============================================================================
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |Total features not written                                                8231
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-08-17 11:56:54|   2.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-08-17 11:56:54|   2.9|  0.0|STATS |                            Features Read Summary
+2022-08-17 11:56:54|   2.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-08-17 11:56:54|   2.9|  0.0|STATS |Sheet1                                                                    8231
+2022-08-17 11:56:54|   2.9|  0.0|STATS |==============================================================================
+2022-08-17 11:56:54|   2.9|  0.0|STATS |Total Features Read                                                       8231
+2022-08-17 11:56:54|   2.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-08-17 11:56:54|   2.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-08-17 11:56:54|   2.9|  0.0|STATS |                           Features Written Summary
+2022-08-17 11:56:54|   2.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-08-17 11:56:54|   2.9|  0.0|STATS |==============================================================================
+2022-08-17 11:56:54|   2.9|  0.0|STATS |Total Features Written                                                       0
+2022-08-17 11:56:54|   2.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |-~                                                                             ~-
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |-~    Feature caches have been recorded at every stage of the translation.     ~-
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |-~                      To inspect the recorded features,                      ~-
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |-~              click the feature cache icons next to the ports.               ~-
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |-~                                                                             ~-
+2022-08-17 11:56:54|   2.9|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2022-08-17 11:56:54|   2.9|  0.0|INFORM|Translation was SUCCESSFUL with 26 warning(s) (0 feature(s) output)
+2022-08-17 11:56:54|   2.9|  0.0|INFORM|FME Session Duration: 3.7 seconds. (CPU: 2.5s user, 0.4s system)
+2022-08-17 11:56:54|   2.9|  0.0|INFORM|END - ProcessID: 12684, peak process memory usage: 170116 kB, current process memory usage: 54156 kB

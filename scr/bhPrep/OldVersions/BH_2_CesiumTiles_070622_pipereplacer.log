@@ -1,0 +1,126 @@
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Current FME version: FME 2021.2.2.0 (20220106 - Build 21806 - WIN64)
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Desktop ESRI Edition (floating)
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Permanent License.
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Machine host name is: CM010707
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Locale: de_CH
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|System Encoding: windows-1252
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\Projects\dataPrep\scr\bhPrep/'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'BH_2_CesiumTiles_070622_pipereplacer.fmw'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2021.2.2.0'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 10 64-bit  (Build 19042)
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Platform: WIN64
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|System Status: 264.46 GB of disk space available in the FME temporary folder (C:\Users\U80863~1\AppData\Local\Temp\wbrun_1654583133562_1004\fmetmp_30)
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|System Status: 15.81 GB of physical memory available
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|System Status: 63.24 GB of virtual memory available
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|START - ProcessID: 15608, peak process memory usage: 41672 kB, current process memory usage: 41672 kB
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `C:/Projects/dataPrep/scr/bhPrep\wb-xlate-1654605042796_1004' `LOG_STANDARDOUT' `YES' `LogCountServerName' `{393573b3-0439-477d-a7ba-1925be25b6d0}'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\U80863546\AppData\Roaming\Safe Software\FME\'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;\\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\Formats
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\U80863546\AppData\Roaming\Safe Software\FME\Packages\21806-win64\transformers;C:\Program Files\FME\transformers;C:\Users\U80863546\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CoordinateSystems
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CoordinateSystemExceptions
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CoordinateSystemGridOverrides
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\CsmapTransformationExceptions
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Shared folders for transformer categories are : \\adb.intra.admin.ch\Userhome$\All\data\Documents\FME\TransformerCategories
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `C:\Projects\dataPrep\scr\bhPrep'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\U80863~1\AppData\Local\Temp\wbrun_1654583133562_1004\fmetmp_30', set from environment variable `FME_TEMP'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\U80863~1\AppData\Local\Temp'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 47.43 GB
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 35.57 GB
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Creating writer for format: 
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Creating reader for format: 
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Using MultiWriter with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2022-06-07 14:30:49|   0.0|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.8 20210302)
+2022-06-07 14:30:49|   0.1|  0.1|INFORM|Emptying factory pipeline
+2022-06-07 14:30:49|   0.1|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
+2022-06-07 14:30:49|   0.1|  0.0|STATS |Unexpected Input Remover Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 14:30:49|   0.1|  0.0|STATS |Export_XLSXR_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 14:30:49|   0.1|  0.0|STATS |CSV_CSV2_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 14:30:49|   0.1|  0.0|STATS |Restoring 10089 feature(s) from FME feature store file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceSetter_2 -1 112 fo 0 OUTPUT  0  64331c6352bf8b108613c073c2649c6d2ad20dbe.ffs'
+2022-06-07 14:30:50|   0.5|  0.4|INFORM|AppearanceSetter_2_OUTPUT_-1_77_Player (RecorderFactory): Played back 10089 feature(s) from file `C:\Users\U80863~1\AppData\Local\Temp\wb-cache-BH_2_CesiumTiles_wep_ama-MVbAJe\Main_AppearanceSetter_2 -1 112 fo 0 OUTPUT  0  64331c6352bf8b108613c073c2649c6d2ad20dbe.ffs'
+2022-06-07 14:30:50|   0.5|  0.0|STATS |Destination Feature Type Routing Correlator (RoutingFactory): Tested 10089 input feature(s), wrote 10089 output feature(s): 0 matched merge filters, 10089 were routed to output, 0 could not be routed.
+2022-06-07 14:30:50|   0.5|  0.0|STATS |Final Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2022-06-07 14:30:50|   0.6|  0.1|INFORM|MULTI_WRITER: multi_writer_id `1': Started outputting features
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|Creating writer for format: OBJ 
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `OBJ'
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|Loaded module 'OBJ' from file 'C:\Program Files\FME\plugins/obj/obj.dll'
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|FME API version of module 'OBJ' matches current internal version (3.8 20210302)
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|FME API version of module 'OBJ' matches current internal version (3.8 20210302)
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|Writer `OBJ_1' of type `OBJ' using group definition keyword `OBJ_1_DEF'
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|FME API version of module 'OBJ' matches current internal version (3.8 20210302)
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|OBJ Writer: Opening File Writer on dataset: 'C:\Projects\dataPrep\scr\bhPrep\data\output'
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|OBJ Writer: Reverse Face Order: 'No'
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|OBJ Writer: Triangulate Faces: 'Yes'
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|OBJ Writer: Write Points and Lines: 'No'
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|OBJ Writer: Write FME Version to OBJ file: 'Yes'
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|OBJ Writer: Write Mesh Vertex Colors: 'Yes'
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|OBJ Writer: Write Texture List File: 'No'
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|OBJ Writer: Fix Names: 'Yes'
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|OBJ Writer: File per Feature: 'No'
+2022-06-07 14:30:50|   0.6|  0.0|INFORM|FME Configuration: Destination coordinate system set to input coordinate system `CH1903Plus_1.LV95/01'
+2022-06-07 14:30:51|   0.9|  0.3|INFORM|OBJ Writer: Double sided surface encountered, auto-picking one side. Use SurfaceSplitter to preserve both sides
+2022-06-07 14:30:54|   3.8|  2.9|INFORM|MULTI_WRITER: multi_writer_id `1': Writing feature 1000 
+2022-06-07 14:30:56|   5.9|  2.1|INFORM|100000 geometry elements processed
+2022-06-07 14:30:57|   7.0|  1.1|INFORM|MULTI_WRITER: multi_writer_id `1': Writing feature 2000 
+2022-06-07 14:31:00|   9.9|  2.9|INFORM|MULTI_WRITER: multi_writer_id `1': Writing feature 3000 
+2022-06-07 14:31:01|  10.9|  1.0|INFORM|199000 geometry elements processed
+2022-06-07 14:31:03|  13.0|  2.1|INFORM|MULTI_WRITER: multi_writer_id `1': Writing feature 4000 
+2022-06-07 14:31:06|  15.8|  2.8|INFORM|MULTI_WRITER: multi_writer_id `1': Writing feature 5000 
+2022-06-07 14:31:06|  15.9|  0.1|INFORM|302000 geometry elements processed
+2022-06-07 14:31:09|  18.9|  3.0|INFORM|MULTI_WRITER: multi_writer_id `1': Writing feature 6000 
+2022-06-07 14:31:11|  20.9|  2.0|INFORM|405000 geometry elements processed
+2022-06-07 14:31:12|  21.6|  0.7|INFORM|MULTI_WRITER: multi_writer_id `1': Writing feature 7000 
+2022-06-07 14:31:14|  24.4|  2.8|INFORM|MULTI_WRITER: multi_writer_id `1': Writing feature 8000 
+2022-06-07 14:31:16|  25.8|  1.4|INFORM|511000 geometry elements processed
+2022-06-07 14:31:17|  27.2|  1.4|INFORM|MULTI_WRITER: multi_writer_id `1': Writing feature 9000 
+2022-06-07 14:31:20|  29.9|  2.7|INFORM|MULTI_WRITER: multi_writer_id `1': Writing feature 10000 
+2022-06-07 14:31:20|  30.2|  0.3|INFORM|OBJ Writer: Material Library File: 'C:\Projects\dataPrep\scr\bhPrep\data\output\materials.mtl'
+2022-06-07 14:31:25|  35.5|  5.3|INFORM|OBJ Writer: Closing File Writer
+2022-06-07 14:31:25|  35.5|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 14:31:25|  35.5|  0.0|INFORM|Feature output statistics for `OBJ' writer using keyword `OBJ_1':
+2022-06-07 14:31:25|  35.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 14:31:25|  35.5|  0.0|STATS |                               Features Written
+2022-06-07 14:31:25|  35.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 14:31:25|  35.5|  0.0|STATS |BH_2_OBJ+20220106                                                        10089
+2022-06-07 14:31:25|  35.5|  0.0|STATS |==============================================================================
+2022-06-07 14:31:25|  35.5|  0.0|STATS |Total Features Written                                                   10089
+2022-06-07 14:31:25|  35.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 14:31:25|  35.5|  0.0|INFORM|MULTI_WRITER: multi_writer_id `1': done writing 10089 feature(s) 
+2022-06-07 14:31:25|  35.5|  0.0|INFORM|^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2022-06-07 14:31:25|  35.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 14:31:25|  35.5|  0.0|STATS |                            Features Read Summary
+2022-06-07 14:31:25|  35.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 14:31:25|  35.5|  0.0|STATS |==============================================================================
+2022-06-07 14:31:25|  35.5|  0.0|STATS |Total Features Read                                                          0
+2022-06-07 14:31:25|  35.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 14:31:25|  35.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 14:31:25|  35.5|  0.0|STATS |                           Features Written Summary
+2022-06-07 14:31:25|  35.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 14:31:25|  35.5|  0.0|STATS |BH_2_OBJ+20220106                                                        10089
+2022-06-07 14:31:25|  35.5|  0.0|STATS |==============================================================================
+2022-06-07 14:31:25|  35.5|  0.0|STATS |Total Features Written                                                   10089
+2022-06-07 14:31:25|  35.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2022-06-07 14:31:25|  35.5|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2022-06-07 14:31:25|  35.5|  0.0|WARN  |-~                                                                             ~-
+2022-06-07 14:31:25|  35.5|  0.0|WARN  |-~    Feature caches have been recorded at every stage of the translation.     ~-
+2022-06-07 14:31:25|  35.5|  0.0|WARN  |-~                      To inspect the recorded features,                      ~-
+2022-06-07 14:31:25|  35.5|  0.0|WARN  |-~              click the feature cache icons next to the ports.               ~-
+2022-06-07 14:31:25|  35.5|  0.0|WARN  |-~                                                                             ~-
+2022-06-07 14:31:25|  35.5|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2022-06-07 14:31:25|  35.5|  0.0|INFORM|Translation was SUCCESSFUL with 7 warning(s) (10089 feature(s) output)
+2022-06-07 14:31:25|  35.5|  0.0|INFORM|FME Session Duration: 36.4 seconds. (CPU: 32.0s user, 3.5s system)
+2022-06-07 14:31:25|  35.5|  0.0|INFORM|END - ProcessID: 15608, peak process memory usage: 175424 kB, current process memory usage: 95148 kB
