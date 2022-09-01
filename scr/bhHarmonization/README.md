@@ -1,1 +1,5 @@
+sistiert - suspended
 
+Der Ordner bhHarmonization gilt als Arbeitsordner für ein Python-Script, welches die geologischen Schichtdaten-Beschreibungen nach Schlüsselwörter filtert. Ziel der Filterung ist die Harmonisierung der Daten, damit sie einheitlich gemäss ihrer Lithologie oder Lithostratigraphie dargestellt und visualisiert werden können. Aufgrund der Datenqualität bzw. der momentan fehlenden Objektivität der Schichtbeschreibungen werden die Bohrdaten vorläufig auf Festgestein / Lockergestein unterschieden, weshalb dieses Script soweit sistiert wurde. 
+
+The folder bhHarmonization is used as a working folder for a Python script that filters the geological layer data descriptions by keywords. The aim of the filtering is to harmonise the data so that they can be presented and visualised uniformly according to their lithology or lithostratigraphy. Due to the quality of the data and the current lack of objectivity of the layer descriptions, the drilling data are provisionally differentiated according to bedrock / unconsolidated rock, which is why this script has been suspended for the time being. 
