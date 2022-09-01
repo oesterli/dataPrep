@@ -1,5 +1,10 @@
 scr/bhHarmonization/data/
-scr/bhPrep
+scr/bhPrep/220808_BH_2_CesiumTiles_070622_pipereplacer_ama.fmw
+scr/bhPrep/220808_BH_2_CesiumTiles_070622_pipereplacer_ama.log
+scr/bhPrep/BH_2_CesiumTiles_070622_pipereplacer_ama.fmw
+scr/bhPrep/BH_2_CesiumTiles_070622_pipereplacer_ama.log
+scr/bhPrep/Composite deviation + TVD.xlsx
+scr/bhPrep/Composite deviation + TVD_test.xlsx
 scr/swissforagePrep/data/
 scr/xmlPrep/.idea
 scr/xmlPrep/220422_Daten_Basket002_TID1.xml
